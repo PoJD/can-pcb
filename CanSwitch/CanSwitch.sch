@@ -722,7 +722,7 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="GME">
+<library name="PoJD">
 <packages>
 <package name="WEBP88_RJ45">
 <description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
@@ -779,6 +779,34 @@ Výrobce PTR</description>
 <text x="-3.9" y="12.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.9" y="-11.5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="MCP2561_PDIP">
+<description>High-Speed CAN Transceiver
+See http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf
+
+The MCP2561/2 is a Microchip Technology Inc. second
+generation high-speed CAN transceiver. It serves as an
+interface between a CAN protocol controller and the
+physical two-wire CAN bus.
+The device meets the automotive requirements for
+high-speed (up to 1 Mb/s), low quiescent current,
+electromagnetic compatibility (EMC) and electrostatic
+discharge (ESD).</description>
+<pad name="TXD" x="-4" y="3.81" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="VSS" x="-4" y="1.27" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="VDD" x="-4" y="-1.27" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="RXD" x="-4" y="-3.81" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="STBY" x="4" y="3.81" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="CANH" x="4" y="1.27" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="CANL" x="4" y="-1.27" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="SPLIT" x="4" y="-3.81" drill="0.5" diameter="1.524" shape="square"/>
+<wire x1="-2.5" y1="3.81" x2="-2.5" y2="-3.81" width="0.8" layer="21"/>
+<wire x1="-2.5" y1="-3.81" x2="2.5" y2="-3.81" width="0.8" layer="21"/>
+<wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.8" layer="21"/>
+<wire x1="2.5" y1="3.81" x2="-2.5" y2="3.81" width="0.8" layer="21"/>
+<text x="-3.1" y="4.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.8" y="-6" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-4.69" y="4.81" size="0.5" layer="21">TXD</text>
+</package>
 </packages>
 <symbols>
 <symbol name="WEBP88_RJ45">
@@ -828,6 +856,33 @@ Výrobce PTR</description>
 <pin name="INPUT" x="-10.16" y="-2.54" length="middle"/>
 <text x="-4.572" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MCP2561">
+<description>High-Speed CAN Transceiver
+See http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf
+
+The MCP2561/2 is a Microchip Technology Inc. second
+generation high-speed CAN transceiver. It serves as an
+interface between a CAN protocol controller and the
+physical two-wire CAN bus.
+The device meets the automotive requirements for
+high-speed (up to 1 Mb/s), low quiescent current,
+electromagnetic compatibility (EMC) and electrostatic
+discharge (ESD).</description>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="TXD" x="-17.78" y="7.62" length="middle"/>
+<pin name="VSS" x="-17.78" y="2.54" length="middle"/>
+<pin name="VDD" x="-17.78" y="-2.54" length="middle"/>
+<pin name="RXD" x="-17.78" y="-7.62" length="middle"/>
+<pin name="SPLIT" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="CANL" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="CANH" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="STBY" x="17.78" y="7.62" length="middle" rot="R180"/>
+<text x="-12.7" y="13.462" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -887,69 +942,6 @@ Výrobce PTR</description>
 </device>
 </devices>
 </deviceset>
-</devicesets>
-</library>
-<library name="PoJD">
-<packages>
-<package name="MCP2561_PDIP">
-<description>High-Speed CAN Transceiver
-See http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf
-
-The MCP2561/2 is a Microchip Technology Inc. second
-generation high-speed CAN transceiver. It serves as an
-interface between a CAN protocol controller and the
-physical two-wire CAN bus.
-The device meets the automotive requirements for
-high-speed (up to 1 Mb/s), low quiescent current,
-electromagnetic compatibility (EMC) and electrostatic
-discharge (ESD).</description>
-<pad name="TXD" x="-4" y="3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="VSS" x="-4" y="1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="VDD" x="-4" y="-1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="RXD" x="-4" y="-3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="STBY" x="4" y="3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="CANH" x="4" y="1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="CANL" x="4" y="-1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="SPLIT" x="4" y="-3.81" drill="0.5" diameter="1.524" shape="square"/>
-<wire x1="-2.5" y1="3.81" x2="-2.5" y2="-3.81" width="0.8" layer="21"/>
-<wire x1="-2.5" y1="-3.81" x2="2.5" y2="-3.81" width="0.8" layer="21"/>
-<wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.8" layer="21"/>
-<wire x1="2.5" y1="3.81" x2="-2.5" y2="3.81" width="0.8" layer="21"/>
-<text x="-3.1" y="4.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.8" y="-6" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-4.69" y="4.81" size="0.5" layer="21">TXD</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MCP2561">
-<description>High-Speed CAN Transceiver
-See http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf
-
-The MCP2561/2 is a Microchip Technology Inc. second
-generation high-speed CAN transceiver. It serves as an
-interface between a CAN protocol controller and the
-physical two-wire CAN bus.
-The device meets the automotive requirements for
-high-speed (up to 1 Mb/s), low quiescent current,
-electromagnetic compatibility (EMC) and electrostatic
-discharge (ESD).</description>
-<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
-<pin name="TXD" x="-17.78" y="7.62" length="middle"/>
-<pin name="VSS" x="-17.78" y="2.54" length="middle"/>
-<pin name="VDD" x="-17.78" y="-2.54" length="middle"/>
-<pin name="RXD" x="-17.78" y="-7.62" length="middle"/>
-<pin name="SPLIT" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="CANL" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="CANH" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="STBY" x="17.78" y="7.62" length="middle" rot="R180"/>
-<text x="-12.7" y="13.462" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
 <deviceset name="MCP2561">
 <description>High-Speed CAN Transceiver
 See http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf
@@ -8327,8 +8319,8 @@ Source: AVX .. aphvc.pdf</description>
 <parts>
 <part name="CHIP" library="microchip" deviceset="PIC18F2*80" device="-I/SP" technology="4"/>
 <part name="DEBUGGING" library="pinhead" deviceset="PINHD-1X5" device=""/>
-<part name="RJ45CONNECTOR" library="GME" deviceset="WEBP88" device="GME"/>
-<part name="SWITCHINPUT" library="GME" deviceset="PTRAK700250" device="GME"/>
+<part name="RJ45CONNECTOR" library="PoJD" deviceset="WEBP88" device="GME"/>
+<part name="SWITCHINPUT" library="PoJD" deviceset="PTRAK700250" device="GME"/>
 <part name="MCP2561" library="PoJD" deviceset="MCP2561" device="MCP"/>
 <part name="MCLR_J" library="jumper" deviceset="JP1Q" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/10" value="10kOhm"/>
