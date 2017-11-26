@@ -748,7 +748,6 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <pad name="RJ45210" x="12.7" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <hole x="-12.7" y="-1.3" drill="3.25"/>
 <hole x="12.7" y="-1.3" drill="3.25"/>
-<hole x="0" y="8.86" drill="1.7"/>
 <hole x="-15.38" y="-4.35" drill="1.7"/>
 <hole x="15.38" y="-4.35" drill="1.7"/>
 <wire x1="-15.62" y1="3" x2="15.62" y2="3" width="0.8" layer="21"/>
