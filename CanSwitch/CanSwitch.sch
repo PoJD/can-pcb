@@ -43,7 +43,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -751,12 +751,12 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <hole x="0" y="8.86" drill="1.7"/>
 <hole x="-15.38" y="-4.35" drill="1.7"/>
 <hole x="15.38" y="-4.35" drill="1.7"/>
-<wire x1="-15.62" y1="9.2" x2="15.62" y2="9.2" width="0.127" layer="51"/>
-<wire x1="15.62" y1="9.2" x2="15.62" y2="-9.2" width="0.127" layer="51"/>
-<wire x1="15.62" y1="-9.2" x2="-15.62" y2="-9.2" width="0.127" layer="51"/>
-<wire x1="-15.62" y1="-9.2" x2="-15.62" y2="9.2" width="0.127" layer="51"/>
+<wire x1="-15.62" y1="3" x2="15.62" y2="3" width="0.8" layer="21"/>
+<wire x1="15.62" y1="3" x2="15.62" y2="-9.2" width="0.8" layer="21"/>
+<wire x1="15.62" y1="-9.2" x2="-15.62" y2="-9.2" width="0.8" layer="21"/>
+<wire x1="-15.62" y1="-9.2" x2="-15.62" y2="3" width="0.8" layer="21"/>
 <text x="-15.51" y="9.74" size="1.27" layer="25">&gt;NAME</text>
-<text x="-15.56" y="-10.77" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-15.76" y="-11.17" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-14.49" y="7.18" size="0.8128" layer="27">1</text>
 <text x="13.82" y="4.56" size="0.8128" layer="27">10</text>
 </package>
@@ -770,14 +770,16 @@ Jmenovitý proud = 24A
 Orientace vodiče = vertikální
 Možnost spojování = ano
 Výrobce PTR</description>
-<wire x1="-5" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
-<wire x1="5" y1="12" x2="5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="12" x2="-5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="-10" x2="5" y2="-10" width="0.127" layer="21"/>
-<pad name="GND" x="-2.5" y="11.1" drill="0.9" shape="square"/>
-<pad name="INPUT" x="2.5" y="11.1" drill="0.9" shape="square"/>
+<wire x1="-5" y1="9.8" x2="5" y2="9.8" width="0.8" layer="21"/>
+<wire x1="5" y1="9.8" x2="5" y2="-10" width="0.8" layer="21"/>
+<wire x1="-5" y1="9.8" x2="-5" y2="-10" width="0.8" layer="21"/>
+<wire x1="-5" y1="-10" x2="5" y2="-10" width="0.8" layer="21"/>
+<pad name="GND" x="-2.5" y="11.1" drill="0.9" diameter="1.3" shape="square"/>
+<pad name="INPUT" x="2.5" y="11.1" drill="0.9" diameter="1.3" shape="square"/>
 <text x="-3.9" y="12.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.9" y="-11.5" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-4" y="-12" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-4.9" y="10.9" size="0.5" layer="21">GND</text>
+<text x="-4.9" y="10.9" size="0.5" layer="21">GND</text>
 </package>
 <package name="MCP2561_PDIP">
 <description>High-Speed CAN Transceiver
@@ -791,14 +793,14 @@ The device meets the automotive requirements for
 high-speed (up to 1 Mb/s), low quiescent current,
 electromagnetic compatibility (EMC) and electrostatic
 discharge (ESD).</description>
-<pad name="TXD" x="-4" y="3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="VSS" x="-4" y="1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="VDD" x="-4" y="-1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="RXD" x="-4" y="-3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="STBY" x="4" y="3.81" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="CANH" x="4" y="1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="CANL" x="4" y="-1.27" drill="0.5" diameter="1.524" shape="square"/>
-<pad name="SPLIT" x="4" y="-3.81" drill="0.5" diameter="1.524" shape="square"/>
+<pad name="TXD" x="-4" y="3.81" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="VSS" x="-4" y="1.27" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="VDD" x="-4" y="-1.27" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="RXD" x="-4" y="-3.81" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="STBY" x="4" y="3.81" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="CANH" x="4" y="1.27" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="CANL" x="4" y="-1.27" drill="0.8128" diameter="1.524" shape="square"/>
+<pad name="SPLIT" x="4" y="-3.81" drill="0.8128" diameter="1.524" shape="square"/>
 <wire x1="-2.5" y1="3.81" x2="-2.5" y2="-3.81" width="0.8" layer="21"/>
 <wire x1="-2.5" y1="-3.81" x2="2.5" y2="-3.81" width="0.8" layer="21"/>
 <wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.8" layer="21"/>
@@ -8700,7 +8702,6 @@ Source: AVX .. aphvc.pdf</description>
 <approved hash="104,1,-50.8,83.82,CHIP,VDD,+5V,,,"/>
 <approved hash="113,1,-44.2911,52.2012,DEBUGGING,,,,,"/>
 <approved hash="113,1,-156.341,106.68,MCLR_J,,,,,"/>
-<approved hash="113,1,-119.058,95.25,XTAL,,,,,"/>
 <approved hash="113,1,-122.72,76.5217,STATUSLED,,,,,"/>
 </errors>
 </schematic>
