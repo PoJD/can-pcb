@@ -750,10 +750,10 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <hole x="12.7" y="-1.3" drill="3.25"/>
 <hole x="-15.38" y="-4.35" drill="1.7"/>
 <hole x="15.38" y="-4.35" drill="1.7"/>
-<wire x1="-15.62" y1="3" x2="15.62" y2="3" width="0.8" layer="21"/>
-<wire x1="15.62" y1="3" x2="15.62" y2="-9.2" width="0.8" layer="21"/>
-<wire x1="15.62" y1="-9.2" x2="-15.62" y2="-9.2" width="0.8" layer="21"/>
-<wire x1="-15.62" y1="-9.2" x2="-15.62" y2="3" width="0.8" layer="21"/>
+<wire x1="-15.62" y1="9.2" x2="15.62" y2="9.2" width="0.127" layer="21"/>
+<wire x1="15.62" y1="9.2" x2="15.62" y2="-9.2" width="0.127" layer="21"/>
+<wire x1="15.62" y1="-9.2" x2="-15.62" y2="-9.2" width="0.127" layer="21"/>
+<wire x1="-15.62" y1="-9.2" x2="-15.62" y2="9.2" width="0.127" layer="21"/>
 <text x="-15.51" y="9.74" size="1.27" layer="25">&gt;NAME</text>
 <text x="-15.76" y="-11.17" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-14.49" y="7.18" size="0.8128" layer="27">1</text>
@@ -769,16 +769,15 @@ Jmenovitý proud = 24A
 Orientace vodiče = vertikální
 Možnost spojování = ano
 Výrobce PTR</description>
-<wire x1="-5" y1="9.8" x2="5" y2="9.8" width="0.8" layer="21"/>
-<wire x1="5" y1="9.8" x2="5" y2="-10" width="0.8" layer="21"/>
-<wire x1="-5" y1="9.8" x2="-5" y2="-10" width="0.8" layer="21"/>
-<wire x1="-5" y1="-10" x2="5" y2="-10" width="0.8" layer="21"/>
-<pad name="GND" x="-2.5" y="11.1" drill="0.9" diameter="1.3" shape="square"/>
-<pad name="INPUT" x="2.5" y="11.1" drill="0.9" diameter="1.3" shape="square"/>
+<wire x1="-5" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
+<wire x1="5" y1="12" x2="5" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5" y1="12" x2="-5" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5" y1="-10" x2="5" y2="-10" width="0.127" layer="21"/>
+<pad name="GND" x="-2.5" y="11.1" drill="0.9" diameter="1.3" shape="long"/>
+<pad name="INPUT" x="2.5" y="11.1" drill="0.9" diameter="1.3" shape="long"/>
 <text x="-3.9" y="12.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4" y="-12" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-4.9" y="10.9" size="0.5" layer="21">GND</text>
-<text x="-4.9" y="10.9" size="0.5" layer="21">GND</text>
+<text x="-4.9" y="9.63" size="0.5" layer="21">GND</text>
 </package>
 <package name="MCP2561_PDIP">
 <description>High-Speed CAN Transceiver
@@ -792,18 +791,18 @@ The device meets the automotive requirements for
 high-speed (up to 1 Mb/s), low quiescent current,
 electromagnetic compatibility (EMC) and electrostatic
 discharge (ESD).</description>
-<pad name="TXD" x="-4" y="3.81" drill="0.8128" diameter="1.524" shape="square"/>
-<pad name="VSS" x="-4" y="1.27" drill="0.8128" diameter="1.524" shape="square"/>
-<pad name="VDD" x="-4" y="-1.27" drill="0.8128" diameter="1.524" shape="square"/>
-<pad name="RXD" x="-4" y="-3.81" drill="0.8128" diameter="1.524" shape="square"/>
-<pad name="STBY" x="4" y="3.81" drill="0.8128" diameter="1.524" shape="square"/>
-<pad name="CANH" x="4" y="1.27" drill="0.8128" diameter="1.524" shape="square"/>
-<pad name="CANL" x="4" y="-1.27" drill="0.8128" diameter="1.524" shape="square"/>
-<pad name="SPLIT" x="4" y="-3.81" drill="0.8128" diameter="1.524" shape="square"/>
-<wire x1="-2.5" y1="3.81" x2="-2.5" y2="-3.81" width="0.8" layer="21"/>
-<wire x1="-2.5" y1="-3.81" x2="2.5" y2="-3.81" width="0.8" layer="21"/>
-<wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.8" layer="21"/>
-<wire x1="2.5" y1="3.81" x2="-2.5" y2="3.81" width="0.8" layer="21"/>
+<pad name="TXD" x="-4" y="3.81" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="VSS" x="-4" y="1.27" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="VDD" x="-4" y="-1.27" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="RXD" x="-4" y="-3.81" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="STBY" x="4" y="3.81" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="CANH" x="4" y="1.27" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="CANL" x="4" y="-1.27" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="SPLIT" x="4" y="-3.81" drill="0.8128" diameter="1.524" shape="long"/>
+<wire x1="-2.5" y1="3.81" x2="-2.5" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-3.81" x2="2.5" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.127" layer="21"/>
+<wire x1="2.5" y1="3.81" x2="-2.5" y2="3.81" width="0.127" layer="21"/>
 <text x="-3.1" y="4.8" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.8" y="-6" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-4.69" y="4.81" size="0.5" layer="21">TXD</text>
@@ -8328,14 +8327,14 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0207/10" value="470Ohm"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="10 uF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="025-025X050" value="10 uF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="CXT1" library="rcl" deviceset="C-EU" device="C0805" value="33pF"/>
-<part name="CXT2" library="rcl" deviceset="C-EU" device="C0805" value="33pF"/>
+<part name="CXT1" library="rcl" deviceset="C-EU" device="025-025X050" value="33pF"/>
+<part name="CXT2" library="rcl" deviceset="C-EU" device="025-025X050" value="33pF"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0207/10" value="1kOhm"/>
 <part name="STATUSLED" library="led" deviceset="LED" device="5MM"/>
@@ -8343,7 +8342,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="0.1uF"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
 <part name="XTAL" library="special" deviceset="XTAL/S" device="" value="16MHz"/>
 </parts>
 <sheets>
