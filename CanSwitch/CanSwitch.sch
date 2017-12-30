@@ -8323,8 +8323,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SWITCHINPUT" library="PoJD" deviceset="PTRAK700250" device="GME"/>
 <part name="MCP2561" library="PoJD" deviceset="MCP2561" device="MCP"/>
 <part name="MCLR_J" library="jumper" deviceset="JP1Q" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="0207/10" value="10kOhm"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="0207/10" value="470Ohm"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="0207/10" value="10000"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="0207/10" value="470"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
@@ -8336,7 +8336,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="CXT1" library="rcl" deviceset="C-EU" device="025-025X050" value="33pF"/>
 <part name="CXT2" library="rcl" deviceset="C-EU" device="025-025X050" value="33pF"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="0207/10" value="1kOhm"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="0207/10" value="1000"/>
 <part name="STATUSLED" library="led" deviceset="LED" device="5MM"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
