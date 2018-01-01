@@ -724,7 +724,7 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 </library>
 <library name="PoJD">
 <packages>
-<package name="WEBP88_RJ45">
+<package name="WEBP88_RJ45_DOUBLE">
 <description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
 <pad name="RJ4512" x="-11.43" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <pad name="RJ4514" x="-8.89" y="5.05" drill="0.9" shape="square" rot="R270"/>
@@ -742,10 +742,6 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <pad name="RJ4524" x="5.08" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <pad name="RJ4526" x="7.62" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <pad name="RJ4528" x="10.16" y="5.05" drill="0.9" shape="square" rot="R270"/>
-<pad name="RJ4511" x="-12.7" y="7.59" drill="0.9" shape="square" rot="R270"/>
-<pad name="RJ45110" x="-1.27" y="5.05" drill="0.9" shape="square" rot="R270"/>
-<pad name="RJ4521" x="1.27" y="7.59" drill="0.9" shape="square" rot="R270"/>
-<pad name="RJ45210" x="12.7" y="5.05" drill="0.9" shape="square" rot="R270"/>
 <hole x="-12.7" y="-1.3" drill="3.25"/>
 <hole x="12.7" y="-1.3" drill="3.25"/>
 <hole x="-15.38" y="-4.35" drill="1.7"/>
@@ -756,8 +752,8 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <wire x1="-15.62" y1="-9.2" x2="-15.62" y2="9.2" width="0.127" layer="21"/>
 <text x="-15.51" y="9.74" size="1.27" layer="25">&gt;NAME</text>
 <text x="-15.76" y="-11.17" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-14.49" y="7.18" size="0.8128" layer="27">1</text>
-<text x="13.82" y="4.56" size="0.8128" layer="27">10</text>
+<text x="-13.22" y="4.64" size="0.8128" layer="21">2</text>
+<text x="12.55" y="7.1" size="0.8128" layer="21">9</text>
 </package>
 <package name="PTR_AK700_2_5.0">
 <description>Šroubovací svorkovnice do DPS, zelená.
@@ -809,7 +805,7 @@ discharge (ESD).</description>
 </package>
 </packages>
 <symbols>
-<symbol name="WEBP88_RJ45">
+<symbol name="WEBP88_RJ45_DOUBLE">
 <description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
 <wire x1="-30.48" y1="7.62" x2="-30.48" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-30.48" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -886,13 +882,13 @@ discharge (ESD).</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="WEBP88">
+<deviceset name="WEBP88_D">
 <description>RJ konektor WEBP 8-8 SHIELDED DVOJITY. http://www.gme.cz/rj-konektor-webp-8-8-shielded-dvojity-p833-064</description>
 <gates>
-<gate name="G$1" symbol="WEBP88_RJ45" x="0" y="0"/>
+<gate name="G$1" symbol="WEBP88_RJ45_DOUBLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="GME" package="WEBP88_RJ45">
+<device name="DOUBLE" package="WEBP88_RJ45_DOUBLE">
 <connects>
 <connect gate="G$1" pin="RJ4512" pad="RJ4512"/>
 <connect gate="G$1" pin="RJ4513" pad="RJ4513"/>
@@ -8319,7 +8315,7 @@ Source: AVX .. aphvc.pdf</description>
 <parts>
 <part name="CHIP" library="microchip" deviceset="PIC18F2*80" device="-I/SP" technology="4"/>
 <part name="DEBUGGING" library="pinhead" deviceset="PINHD-1X5" device=""/>
-<part name="RJ45CONNECTOR" library="PoJD" deviceset="WEBP88" device="GME"/>
+<part name="RJ45CONNECTOR" library="PoJD" deviceset="WEBP88_D" device="DOUBLE"/>
 <part name="SWITCHINPUT" library="PoJD" deviceset="PTRAK700250" device="GME"/>
 <part name="MCP2561" library="PoJD" deviceset="MCP2561" device="MCP"/>
 <part name="MCLR_J" library="jumper" deviceset="JP1Q" device=""/>
