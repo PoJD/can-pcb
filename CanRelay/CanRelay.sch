@@ -1099,6 +1099,35 @@ discharge (ESD).</description>
 <text x="-3.556" y="5.334" size="1.27" layer="21">&gt;NAME</text>
 <text x="-3.556" y="-6.604" size="1.27" layer="21">&gt;VALUE</text>
 </package>
+<package name="DC-JACK-GK0.65">
+<description>Napájecí souosý konektor PC-GK0.65. https://www.gme.cz/napajeci-souosy-konektor-pc-gk0-65</description>
+<hole x="-2.6" y="0" drill="1.8"/>
+<hole x="2.9" y="0" drill="1.8"/>
+<pad name="GND1" x="4.2" y="3" drill="0.6" diameter="1.27" shape="long"/>
+<pad name="GND2" x="3.4" y="-3" drill="0.6" diameter="1.27" shape="long"/>
+<pad name="VCC" x="5.6" y="0" drill="0.6" diameter="1.27" shape="long" rot="R90"/>
+<wire x1="-5.6" y1="3" x2="5.6" y2="3" width="0.127" layer="21"/>
+<wire x1="5.6" y1="3" x2="5.6" y2="-3" width="0.127" layer="21"/>
+<wire x1="5.6" y1="-3" x2="-5.6" y2="-3" width="0.127" layer="21"/>
+<wire x1="-5.6" y1="-3" x2="-5.6" y2="3" width="0.127" layer="21"/>
+<wire x1="3.2" y1="3.3" x2="5.2" y2="3.3" width="0" layer="46"/>
+<wire x1="5.2" y1="3.3" x2="5.2" y2="2.7" width="0" layer="46"/>
+<wire x1="5.2" y1="2.7" x2="3.2" y2="2.7" width="0" layer="46"/>
+<wire x1="3.2" y1="3.3" x2="3.2" y2="2.7" width="0" layer="46"/>
+<wire x1="2.4" y1="-2.7" x2="4.4" y2="-2.7" width="0" layer="46"/>
+<wire x1="4.4" y1="-2.7" x2="4.4" y2="-3.3" width="0" layer="46"/>
+<wire x1="4.4" y1="-3.3" x2="2.4" y2="-3.3" width="0" layer="46"/>
+<wire x1="2.4" y1="-2.7" x2="2.4" y2="-3.3" width="0" layer="46"/>
+<wire x1="5.3" y1="0.75" x2="5.9" y2="0.75" width="0" layer="46"/>
+<wire x1="5.9" y1="0.75" x2="5.9" y2="-0.75" width="0" layer="46"/>
+<wire x1="5.9" y1="-0.75" x2="5.3" y2="-0.75" width="0" layer="46"/>
+<wire x1="5.3" y1="-0.75" x2="5.3" y2="0.75" width="0" layer="46"/>
+<text x="-5.715" y="3.302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.715" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
+<text x="1.397" y="2.413" size="0.4064" layer="21">GND</text>
+<text x="0.762" y="-2.794" size="0.4064" layer="21">GND</text>
+<text x="4.699" y="-0.635" size="0.4064" layer="21" rot="R90">VCC</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP2561">
@@ -1159,6 +1188,28 @@ discharge (ESD).</description>
 <pin name="3" x="-2.54" y="-7.62" length="short"/>
 <text x="-7.747" y="13.081" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.747" y="-14.986" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DC-JACK-GK0.65">
+<description>Napájecí souosý konektor PC-GK0.65. https://www.gme.cz/napajeci-souosy-konektor-pc-gk0-65</description>
+<wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.016" x2="-0.762" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-2.54" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-3.302" y1="-2.54" x2="-1.778" y2="1.27" layer="94"/>
+<pin name="VCC" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="GND2" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="GND1" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="-2.54"/>
+<vertex x="2.032" y="-1.27"/>
+<vertex x="3.048" y="-1.27"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1229,6 +1280,24 @@ discharge (ESD).</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DC-JACK-GK0.65">
+<description>Napájecí souosý konektor PC-GK0.65. https://www.gme.cz/napajeci-souosy-konektor-pc-gk0-65</description>
+<gates>
+<gate name="G$1" symbol="DC-JACK-GK0.65" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="SMALL" package="DC-JACK-GK0.65">
+<connects>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7099,11 +7168,14 @@ Source: AVX .. aphvc.pdf</description>
 <part name="RSPLIT1" library="rcl" deviceset="R-EU_" device="0207/10" value="56"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="OUTPUTS" library="pinhead" deviceset="PINHD-2X10" device=""/>
-<part name="RJ45CONNECTOR" library="PoJD" deviceset="WEBP88_S" device="SINGLE"/>
+<part name="RJ45BUSEND" library="PoJD" deviceset="WEBP88_S" device="SINGLE"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="USBTIN" library="PoJD" deviceset="ARK350/3" device="STANDARD"/>
+<part name="PWR" library="PoJD" deviceset="DC-JACK-GK0.65" device="SMALL"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7136,11 +7208,14 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="RSPLIT1" gate="G$1" x="43.18" y="53.34" rot="R90"/>
 <instance part="GND1" gate="1" x="63.5" y="63.5" rot="R90"/>
 <instance part="OUTPUTS" gate="A" x="-93.98" y="45.72"/>
-<instance part="RJ45CONNECTOR" gate="G$1" x="-73.66" y="124.46"/>
+<instance part="RJ45BUSEND" gate="G$1" x="-73.66" y="124.46"/>
 <instance part="P+4" gate="1" x="-43.18" y="116.84" rot="R270"/>
 <instance part="GND7" gate="1" x="-40.64" y="121.92" rot="R90"/>
 <instance part="GND8" gate="1" x="-106.68" y="121.92" rot="R270"/>
 <instance part="USBTIN" gate="G$1" x="15.24" y="45.72"/>
+<instance part="PWR" gate="G$1" x="-12.7" y="127"/>
+<instance part="GND9" gate="1" x="15.24" y="124.46" rot="R90"/>
+<instance part="P+5" gate="1" x="15.24" y="129.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7180,9 +7255,14 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-58.42" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ45_8"/>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_8"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="-55.88" y1="116.84" x2="-45.72" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PWR" gate="G$1" pin="VCC"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="-5.08" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7256,12 +7336,12 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-83.82" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ45_7"/>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_7"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-55.88" y1="121.92" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ45_3"/>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_3"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="-91.44" y1="121.92" x2="-104.14" y2="121.92" width="0.1524" layer="91"/>
 </segment>
@@ -7269,6 +7349,16 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="USBTIN" gate="G$1" pin="3"/>
 <wire x1="12.7" y1="38.1" x2="-2.54" y2="38.1" width="0.1524" layer="91"/>
 <label x="-2.54" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PWR" gate="G$1" pin="GND1"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="-5.08" y1="124.46" x2="5.08" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="PWR" gate="G$1" pin="GND2"/>
+<wire x1="5.08" y1="124.46" x2="12.7" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="127" x2="5.08" y2="127" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="127" x2="5.08" y2="124.46" width="0.1524" layer="91"/>
+<junction x="5.08" y="124.46"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7339,7 +7429,7 @@ Source: AVX .. aphvc.pdf</description>
 <label x="43.18" y="78.74" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ45_1"/>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_1"/>
 <wire x1="-91.44" y1="132.08" x2="-106.68" y2="132.08" width="0.1524" layer="91"/>
 <label x="-106.68" y="132.08" size="1.778" layer="95"/>
 </segment>
@@ -7361,7 +7451,7 @@ Source: AVX .. aphvc.pdf</description>
 <label x="43.18" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ45_2"/>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_2"/>
 <wire x1="-91.44" y1="127" x2="-106.68" y2="127" width="0.1524" layer="91"/>
 <label x="-106.68" y="127" size="1.778" layer="95"/>
 </segment>
