@@ -1085,6 +1085,20 @@ discharge (ESD).</description>
 <text x="-7.62" y="6.731" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7.62" y="-8.001" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="ARK350/3">
+<description>ARK350/3 Blue. Šroubovací svorkovnice do DPS, modrá. https://www.gme.cz/ark350-3-blue</description>
+<pad name="1" x="0" y="3.5" drill="0.8" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="3" x="0" y="-3.5" drill="0.8" shape="square"/>
+<wire x1="-3.45" y1="5.05" x2="-3.45" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="-3.45" y1="-5.05" x2="3.45" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="3.45" y1="-5.05" x2="3.45" y2="5.05" width="0.127" layer="21"/>
+<wire x1="3.45" y1="5.05" x2="-3.45" y2="5.05" width="0.127" layer="21"/>
+<text x="-1.778" y="2.794" size="1.27" layer="21">1</text>
+<text x="-2.032" y="-4.191" size="1.27" layer="21">3</text>
+<text x="-3.556" y="5.334" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3.556" y="-6.604" size="1.27" layer="21">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP2561">
@@ -1130,6 +1144,21 @@ discharge (ESD).</description>
 <pin name="RJ45_5" x="17.78" y="7.62" length="middle" rot="R180"/>
 <text x="-12.446" y="10.668" size="1.27" layer="95">&gt;NAME</text>
 <text x="-12.446" y="-11.938" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ARK350/3">
+<description>ARK350/3 Blue. Šroubovací svorkovnice do DPS, modrá. https://www.gme.cz/ark350-3-blue</description>
+<circle x="2.54" y="7.62" radius="2.54" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="2.54" width="0.254" layer="94"/>
+<circle x="2.54" y="-7.62" radius="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="7.62" length="short"/>
+<pin name="2" x="-2.54" y="0" length="short"/>
+<pin name="3" x="-2.54" y="-7.62" length="short"/>
+<text x="-7.747" y="13.081" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.747" y="-14.986" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1182,6 +1211,24 @@ discharge (ESD).</description>
 <connect gate="G$1" pin="RJ45_6" pad="RJ45_6"/>
 <connect gate="G$1" pin="RJ45_7" pad="RJ45_7"/>
 <connect gate="G$1" pin="RJ45_8" pad="RJ45_8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARK350/3">
+<description>ARK350/3 Blue. Šroubovací svorkovnice do DPS, modrá. https://www.gme.cz/ark350-3-blue</description>
+<gates>
+<gate name="G$1" symbol="ARK350/3" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="STANDARD" package="ARK350/3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7056,6 +7103,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="USBTIN" library="PoJD" deviceset="ARK350/3" device="STANDARD"/>
 </parts>
 <sheets>
 <sheet>
@@ -7092,6 +7140,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="P+4" gate="1" x="-43.18" y="116.84" rot="R270"/>
 <instance part="GND7" gate="1" x="-40.64" y="121.92" rot="R90"/>
 <instance part="GND8" gate="1" x="-106.68" y="121.92" rot="R270"/>
+<instance part="USBTIN" gate="G$1" x="15.24" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -7216,6 +7265,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="-91.44" y1="121.92" x2="-104.14" y2="121.92" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="USBTIN" gate="G$1" pin="3"/>
+<wire x1="12.7" y1="38.1" x2="-2.54" y2="38.1" width="0.1524" layer="91"/>
+<label x="-2.54" y="38.1" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -7289,6 +7343,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-91.44" y1="132.08" x2="-106.68" y2="132.08" width="0.1524" layer="91"/>
 <label x="-106.68" y="132.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="USBTIN" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="53.34" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
+<label x="-2.54" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CANL" class="0">
 <segment>
@@ -7305,6 +7364,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ45_2"/>
 <wire x1="-91.44" y1="127" x2="-106.68" y2="127" width="0.1524" layer="91"/>
 <label x="-106.68" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USBTIN" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="45.72" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
+<label x="-2.54" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD" class="0">
