@@ -18,8 +18,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -57,10 +57,42 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="82.982" y2="0" width="0" layer="20"/>
-<wire x1="82.982" y1="0" x2="82.982" y2="65.522" width="0" layer="20"/>
-<wire x1="82.982" y1="65.522" x2="0" y2="65.522" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="84.633" y2="0" width="0" layer="20"/>
+<wire x1="84.633" y1="0" x2="84.633" y2="65.522" width="0" layer="20"/>
+<wire x1="84.633" y1="65.522" x2="0" y2="65.522" width="0" layer="20"/>
 <wire x1="0" y1="65.522" x2="0" y2="0" width="0" layer="20"/>
+<text x="41.021" y="37.465" size="1.778" layer="21">CanRelay
+By Lubos Housa
+https://github.com/PoJD/can-pcb</text>
+<hole x="3.683" y="36" drill="1.5"/>
+<hole x="82.042" y="36" drill="1.5"/>
+<text x="26.162" y="60.706" size="1.778" layer="21">CANH</text>
+<text x="26.162" y="58.039" size="1.778" layer="21">CANL</text>
+<text x="26.162" y="55.372" size="1.778" layer="21">GND</text>
+<text x="7.239" y="34.036" size="1.778" layer="21" rot="R90">MCLR</text>
+<text x="9.779" y="36.322" size="1.778" layer="21" rot="R90">+5V</text>
+<text x="12.192" y="35.306" size="1.778" layer="21" rot="R90">GND</text>
+<text x="17.272" y="35.306" size="1.778" layer="21" rot="R90">PGC</text>
+<text x="14.732" y="35.433" size="1.778" layer="21" rot="R90">PGD</text>
+<text x="57.912" y="30.226" size="1.778" layer="21" rot="R90">21</text>
+<text x="60.452" y="30.099" size="1.778" layer="21" rot="R90">22</text>
+<text x="62.865" y="30.099" size="1.778" layer="21" rot="R90">23</text>
+<text x="65.532" y="30.099" size="1.778" layer="21" rot="R90">24</text>
+<text x="67.945" y="30.226" size="1.778" layer="21" rot="R90">9</text>
+<text x="70.485" y="29.972" size="1.778" layer="21" rot="R90">10</text>
+<text x="73.152" y="29.972" size="1.778" layer="21" rot="R90">13</text>
+<text x="75.692" y="29.972" size="1.778" layer="21" rot="R90">14</text>
+<text x="78.232" y="29.972" size="1.778" layer="21" rot="R90">15</text>
+<text x="80.772" y="29.972" size="1.778" layer="21" rot="R90">16</text>
+<text x="57.785" y="21.59" size="1.778" layer="21" rot="R90">20</text>
+<text x="60.325" y="21.59" size="1.778" layer="21" rot="R90">19</text>
+<text x="62.865" y="21.463" size="1.778" layer="21" rot="R90">18</text>
+<text x="65.532" y="21.463" size="1.778" layer="21" rot="R90">17</text>
+<text x="68.072" y="22.733" size="1.778" layer="21" rot="R90">6</text>
+<text x="70.739" y="22.733" size="1.778" layer="21" rot="R90">4</text>
+<text x="73.152" y="22.733" size="1.778" layer="21" rot="R90">3</text>
+<text x="75.692" y="22.606" size="1.778" layer="21" rot="R90">2</text>
+<text x="78.232" y="22.987" size="1.778" layer="21" rot="R90">1</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -1822,8 +1854,8 @@ design rules under a new name.</description>
 <contactref element="PWR" pad="GND2"/>
 <polygon width="0.254" layer="1">
 <vertex x="0.762" y="64.897"/>
-<vertex x="82.296" y="64.897"/>
-<vertex x="82.296" y="0.762"/>
+<vertex x="83.82" y="64.897"/>
+<vertex x="83.82" y="0.762"/>
 <vertex x="0.762" y="0.762"/>
 </polygon>
 <contactref element="USBTIN" pad="3"/>
@@ -2111,8 +2143,8 @@ design rules under a new name.</description>
 <signal name="N$3">
 <polygon width="0.254" layer="16">
 <vertex x="0.762" y="64.897"/>
-<vertex x="82.296" y="64.897"/>
-<vertex x="82.296" y="0.889"/>
+<vertex x="83.82" y="65.024"/>
+<vertex x="83.82" y="1.016"/>
 <vertex x="0.762" y="0.889"/>
 </polygon>
 </signal>
@@ -2129,4 +2161,10 @@ design rules under a new name.</description>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
