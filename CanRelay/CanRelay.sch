@@ -7331,11 +7331,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="55.88" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="20"/>
-<wire x1="-88.9" y1="33.02" x2="-73.66" y2="33.02" width="0.1524" layer="91"/>
-<label x="-83.82" y="33.02" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_7"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-55.88" y1="121.92" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
@@ -7529,9 +7524,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-53.34" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="10"/>
-<wire x1="-88.9" y1="45.72" x2="-73.66" y2="45.72" width="0.1524" layer="91"/>
-<label x="-83.82" y="45.72" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="18"/>
+<wire x1="-88.9" y1="35.56" x2="-73.66" y2="35.56" width="0.1524" layer="91"/>
+<label x="-83.82" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PGD/O16" class="0">
@@ -7546,9 +7541,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-53.34" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="11"/>
-<wire x1="-96.52" y1="43.18" x2="-111.76" y2="43.18" width="0.1524" layer="91"/>
-<label x="-111.76" y="43.18" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="20"/>
+<wire x1="-88.9" y1="33.02" x2="-73.66" y2="33.02" width="0.1524" layer="91"/>
+<label x="-83.82" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O14" class="0">
@@ -7558,9 +7553,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-43.18" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="9"/>
-<wire x1="-96.52" y1="45.72" x2="-111.76" y2="45.72" width="0.1524" layer="91"/>
-<label x="-111.76" y="45.72" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="16"/>
+<wire x1="-88.9" y1="38.1" x2="-73.66" y2="38.1" width="0.1524" layer="91"/>
+<label x="-83.82" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O13" class="0">
@@ -7570,9 +7565,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-43.18" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="8"/>
-<wire x1="-88.9" y1="48.26" x2="-73.66" y2="48.26" width="0.1524" layer="91"/>
-<label x="-83.82" y="48.26" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="14"/>
+<wire x1="-88.9" y1="40.64" x2="-73.66" y2="40.64" width="0.1524" layer="91"/>
+<label x="-83.82" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O10" class="0">
@@ -7582,9 +7577,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-43.18" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="7"/>
-<wire x1="-96.52" y1="48.26" x2="-111.76" y2="48.26" width="0.1524" layer="91"/>
-<label x="-111.76" y="48.26" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="12"/>
+<wire x1="-88.9" y1="43.18" x2="-73.66" y2="43.18" width="0.1524" layer="91"/>
+<label x="-83.82" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O9" class="0">
@@ -7594,9 +7589,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-43.18" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="6"/>
-<wire x1="-88.9" y1="50.8" x2="-73.66" y2="50.8" width="0.1524" layer="91"/>
-<label x="-83.82" y="50.8" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="10"/>
+<wire x1="-88.9" y1="45.72" x2="-73.66" y2="45.72" width="0.1524" layer="91"/>
+<label x="-83.82" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O24" class="0">
@@ -7606,9 +7601,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-43.18" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="19"/>
-<wire x1="-96.52" y1="33.02" x2="-111.76" y2="33.02" width="0.1524" layer="91"/>
-<label x="-111.76" y="33.02" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="8"/>
+<wire x1="-88.9" y1="48.26" x2="-73.66" y2="48.26" width="0.1524" layer="91"/>
+<label x="-83.82" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O23" class="0">
@@ -7618,9 +7613,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-43.18" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="18"/>
-<wire x1="-88.9" y1="35.56" x2="-73.66" y2="35.56" width="0.1524" layer="91"/>
-<label x="-83.82" y="35.56" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="6"/>
+<wire x1="-88.9" y1="50.8" x2="-73.66" y2="50.8" width="0.1524" layer="91"/>
+<label x="-83.82" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O22" class="0">
@@ -7630,9 +7625,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-43.18" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="17"/>
-<wire x1="-96.52" y1="35.56" x2="-111.76" y2="35.56" width="0.1524" layer="91"/>
-<label x="-111.76" y="35.56" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="4"/>
+<wire x1="-88.9" y1="53.34" x2="-73.66" y2="53.34" width="0.1524" layer="91"/>
+<label x="-83.82" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O21" class="0">
@@ -7642,9 +7637,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-43.18" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="16"/>
-<wire x1="-88.9" y1="38.1" x2="-73.66" y2="38.1" width="0.1524" layer="91"/>
-<label x="-83.82" y="38.1" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="2"/>
+<wire x1="-88.9" y1="55.88" x2="-73.66" y2="55.88" width="0.1524" layer="91"/>
+<label x="-83.82" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O1" class="0">
@@ -7654,9 +7649,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="1"/>
-<wire x1="-96.52" y1="55.88" x2="-111.76" y2="55.88" width="0.1524" layer="91"/>
-<label x="-111.76" y="55.88" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="17"/>
+<wire x1="-96.52" y1="35.56" x2="-111.76" y2="35.56" width="0.1524" layer="91"/>
+<label x="-111.76" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O2" class="0">
@@ -7666,9 +7661,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="2"/>
-<wire x1="-88.9" y1="55.88" x2="-73.66" y2="55.88" width="0.1524" layer="91"/>
-<label x="-83.82" y="55.88" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="15"/>
+<wire x1="-96.52" y1="38.1" x2="-111.76" y2="38.1" width="0.1524" layer="91"/>
+<label x="-111.76" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O3" class="0">
@@ -7678,9 +7673,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="3"/>
-<wire x1="-96.52" y1="53.34" x2="-111.76" y2="53.34" width="0.1524" layer="91"/>
-<label x="-111.76" y="53.34" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="13"/>
+<wire x1="-96.52" y1="40.64" x2="-111.76" y2="40.64" width="0.1524" layer="91"/>
+<label x="-111.76" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O4" class="0">
@@ -7690,9 +7685,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="4"/>
-<wire x1="-88.9" y1="53.34" x2="-73.66" y2="53.34" width="0.1524" layer="91"/>
-<label x="-83.82" y="53.34" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="11"/>
+<wire x1="-96.52" y1="43.18" x2="-111.76" y2="43.18" width="0.1524" layer="91"/>
+<label x="-111.76" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O6" class="0">
@@ -7702,9 +7697,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="5"/>
-<wire x1="-96.52" y1="50.8" x2="-111.76" y2="50.8" width="0.1524" layer="91"/>
-<label x="-111.76" y="50.8" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="9"/>
+<wire x1="-96.52" y1="45.72" x2="-111.76" y2="45.72" width="0.1524" layer="91"/>
+<label x="-111.76" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O17" class="0">
@@ -7714,9 +7709,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="12"/>
-<wire x1="-88.9" y1="43.18" x2="-73.66" y2="43.18" width="0.1524" layer="91"/>
-<label x="-83.82" y="43.18" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="7"/>
+<wire x1="-96.52" y1="48.26" x2="-111.76" y2="48.26" width="0.1524" layer="91"/>
+<label x="-111.76" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O18" class="0">
@@ -7726,9 +7721,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="13"/>
-<wire x1="-96.52" y1="40.64" x2="-111.76" y2="40.64" width="0.1524" layer="91"/>
-<label x="-111.76" y="40.64" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="5"/>
+<wire x1="-96.52" y1="50.8" x2="-111.76" y2="50.8" width="0.1524" layer="91"/>
+<label x="-111.76" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O19" class="0">
@@ -7738,9 +7733,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="14"/>
-<wire x1="-88.9" y1="40.64" x2="-73.66" y2="40.64" width="0.1524" layer="91"/>
-<label x="-83.82" y="40.64" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="3"/>
+<wire x1="-96.52" y1="53.34" x2="-111.76" y2="53.34" width="0.1524" layer="91"/>
+<label x="-111.76" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="O20" class="0">
@@ -7750,9 +7745,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-109.22" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="OUTPUTS" gate="A" pin="15"/>
-<wire x1="-96.52" y1="38.1" x2="-111.76" y2="38.1" width="0.1524" layer="91"/>
-<label x="-111.76" y="38.1" size="1.778" layer="95"/>
+<pinref part="OUTPUTS" gate="A" pin="1"/>
+<wire x1="-96.52" y1="55.88" x2="-111.76" y2="55.88" width="0.1524" layer="91"/>
+<label x="-111.76" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -7763,8 +7758,8 @@ Source: AVX .. aphvc.pdf</description>
 <approved hash="104,1,-50.8,81.28,CHIP,VSS,GND,,,"/>
 <approved hash="104,1,-50.8,83.82,CHIP,VDD,+5V,,,"/>
 <approved hash="113,1,-44.2911,52.2012,DEBUGGING,,,,,"/>
-<approved hash="113,1,-156.341,106.68,MCLR_J,,,,,"/>
-<approved hash="113,1,-122.72,76.5217,STATUSLED,,,,,"/>
+<approved hash="113,1,-163.961,106.68,MCLR_J,,,,,"/>
+<approved hash="113,1,-92.7523,45.8512,OUTPUTS,,,,,"/>
 </errors>
 </schematic>
 </drawing>
