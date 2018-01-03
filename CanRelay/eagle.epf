@@ -350,10 +350,10 @@ UsedLibrary="/home/pojd/work/eagle/PoJD.lbr"
 [Win_1]
 Type="Schematic Editor"
 Loc="0 0 599 399"
-State=2
+State=1
 Number=2
-File="CanRelay.sch"
-View="-172.153 28.1432 71.3147 139.09"
+File="/home/pojd/work/can-pcb/CanSwitch/CanSwitch.sch"
+View="-147.428 49.2792 6.67613 119.269"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -392,6 +392,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
+Views=" 1: -147.428 49.2792 6.67613 119.269"
 Sheet="1"
 
 [Win_2]
@@ -399,8 +400,8 @@ Type="Board Editor"
 Loc="0 0 599 399"
 State=1
 Number=1
-File="CanRelay.brd"
-View="-3.77102 -19.1888 99.7905 62.5826"
+File="/home/pojd/work/can-pcb/CanSwitch/CanSwitch.brd"
+View="-1.18812 -1.42177 61.9147 73.8312"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -438,7 +439,7 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=21
+Layer=16
 
 [Win_3]
 Type="Control Panel"

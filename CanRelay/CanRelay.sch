@@ -1345,7 +1345,7 @@ discharge (ESD).</description>
 <gate name="G$1" symbol="DC-JACK-GK0.65" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="SMALL" package="DC-JACK-GK0.65">
+<device name="S" package="DC-JACK-GK0.65">
 <connects>
 <connect gate="G$1" pin="GND1" pad="GND1"/>
 <connect gate="G$1" pin="GND2" pad="GND2"/>
@@ -7224,7 +7224,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="PWR" library="PoJD" deviceset="DC-JACK-GK0.65" device="SMALL"/>
+<part name="PWR" library="PoJD" deviceset="DC-JACK-GK0.65" device="S"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="USBTIN" library="pinhead" deviceset="PINHD-1X3" device=""/>

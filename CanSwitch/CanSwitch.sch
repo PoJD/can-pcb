@@ -8553,7 +8553,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-106.68" y1="91.44" x2="-106.68" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="OSC1" class="0">
 <segment>
 <pinref part="CHIP" gate="G$1" pin="RA7/CLKI/OSC1"/>
 <wire x1="-101.6" y1="83.82" x2="-111.76" y2="83.82" width="0.1524" layer="91"/>
@@ -8674,7 +8674,7 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-55.88" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="OSC2" class="0">
 <segment>
 <pinref part="CHIP" gate="G$1" pin="RA6/CLKO/OSC2"/>
 <wire x1="-101.6" y1="81.28" x2="-114.3" y2="81.28" width="0.1524" layer="91"/>
