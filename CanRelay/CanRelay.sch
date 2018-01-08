@@ -1160,7 +1160,6 @@ discharge (ESD).</description>
 <wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.127" layer="21"/>
 <wire x1="2.5" y1="3.81" x2="-2.5" y2="3.81" width="0.127" layer="21"/>
 <text x="-3.1" y="4.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.8" y="-6" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-4.69" y="4.81" size="0.5" layer="21">TXD</text>
 </package>
 <package name="WEBP88_RJ45_SINGLE">
@@ -1182,7 +1181,6 @@ discharge (ESD).</description>
 <text x="-5.207" y="3.81" size="1.27" layer="21">1</text>
 <text x="4.445" y="1.27" size="1.27" layer="21">8</text>
 <text x="-7.62" y="6.731" size="1.27" layer="25">&gt;NAME</text>
-<text x="-7.62" y="-8.001" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="DC-JACK-GK0.65">
 <description>Napájecí souosý konektor PC-GK0.65. https://www.gme.cz/napajeci-souosy-konektor-pc-gk0-65</description>
@@ -1208,10 +1206,9 @@ discharge (ESD).</description>
 <wire x1="5.9" y1="-0.75" x2="5.3" y2="-0.75" width="0" layer="46"/>
 <wire x1="5.3" y1="-0.75" x2="5.3" y2="0.75" width="0" layer="46"/>
 <text x="-5.715" y="3.302" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.715" y="-4.572" size="1.27" layer="27">&gt;VALUE</text>
-<text x="1.397" y="2.413" size="0.4064" layer="21">GND</text>
-<text x="0.762" y="-2.794" size="0.4064" layer="21">GND</text>
-<text x="4.699" y="-0.635" size="0.4064" layer="21" rot="R90">VCC</text>
+<text x="0.254" y="2.032" size="0.8128" layer="21">GND</text>
+<text x="-0.508" y="-2.794" size="0.8128" layer="21">GND</text>
+<text x="4.8006" y="-1.27" size="0.8128" layer="21" rot="R90">VCC</text>
 </package>
 </packages>
 <symbols>
