@@ -14,4 +14,6 @@ CanSwitch is a PCB that will be present in the wall and would have 1 single inpu
 Followed https://www.sparkfun.com/tutorials/110 to create custom components bought for this PCB and resulting in a custom library here: https://github.com/PoJD/eagle
 Then followed https://learn.sparkfun.com/tutorials/using-eagle-schematic/adding-parts-to-a-schematic and other related guides to create the PCB in Eagle application.
 
+https://learn.sparkfun.com/tutorials/using-eagle-board-layout#generating-gerbers and http://www.allpcb.com/sns/Gerber+File/2017-02-24_1_10_4819_Create+a+Gerber+File+with+Eagle/rpllst.html for generating Gerber files to let the PCBs get manufactured
+
 See details of the communication protocal in that project, this is simply a project designed to have custom boards that would then be installed in the house.
