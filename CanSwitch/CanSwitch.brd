@@ -18,10 +18,10 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -57,26 +57,30 @@
 </layers>
 <board>
 <plain>
-<wire x1="61.595" y1="0.127" x2="61.595" y2="72.136" width="0.2032" layer="20"/>
-<wire x1="61.595" y1="72.136" x2="0.127" y2="72.136" width="0.2032" layer="20"/>
-<wire x1="0.127" y1="72.136" x2="0.127" y2="0.127" width="0.2032" layer="20"/>
-<wire x1="0.127" y1="0.127" x2="61.595" y2="0.127" width="0.2032" layer="20"/>
-<hole x="2.667" y="32.766" drill="1.5"/>
-<hole x="58.801" y="32.766" drill="1.5"/>
+<wire x1="64.595" y1="0" x2="64.595" y2="72.136" width="0.2032" layer="20"/>
+<wire x1="64.595" y1="72.136" x2="0" y2="72.136" width="0.2032" layer="20"/>
+<wire x1="0" y1="72.136" x2="0" y2="0" width="0.2032" layer="20"/>
+<wire x1="0" y1="0" x2="64.595" y2="0" width="0.2032" layer="20"/>
+<hole x="4" y="68.136" drill="2.8"/>
+<hole x="61.738" y="45" drill="2.8"/>
 <text x="3.175" y="21.717" size="1.27" layer="21">STATUS</text>
 <text x="24.892" y="45.847" size="1.27" layer="21" rot="R90">MCLR</text>
 <text x="16.256" y="48.641" size="1.27" layer="21">+5V</text>
-<text x="56.007" y="46.736" size="1.27" layer="22" rot="MR0">CANH</text>
-<text x="49.657" y="41.656" size="1.27" layer="22" rot="MR0">CANL</text>
+<text x="60.531" y="51.562" size="1.27" layer="22" rot="MR0">CANH</text>
+<text x="44.275" y="49.022" size="1.27" layer="22" rot="MR0">CANL</text>
 <text x="27.178" y="45.72" size="1.27" layer="21" rot="R90">+5V</text>
 <text x="29.972" y="45.847" size="1.27" layer="21" rot="R90">GND</text>
 <text x="35.052" y="45.847" size="1.27" layer="21" rot="R90">PGC</text>
 <text x="32.512" y="45.847" size="1.27" layer="21" rot="R90">PGD</text>
-<text x="53.848" y="42.799" size="1.27" layer="21" rot="R90">CanSwitch
+<text x="49.863" y="41.021" size="1.27" layer="21" rot="R90">CanSwitch 1.1
 By Lubos Housa
 https://github.com/PoJD/can-pcb</text>
 <text x="21.463" y="42.291" size="1.27" layer="21" rot="R270">MCLR</text>
 <text x="11.176" y="32.131" size="1.27" layer="21">DEBUG</text>
+<text x="40.513" y="8.763" size="1.27" layer="21" rot="R90">+5V</text>
+<text x="35.052" y="1.651" size="1.27" layer="21">STBY</text>
+<text x="46.228" y="1.778" size="1.27" layer="22" rot="MR0">CANRX</text>
+<text x="45.847" y="12.065" size="1.27" layer="22" rot="MR0">CANTX</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -1426,24 +1430,25 @@ discharge (ESD).</description>
 <text x="-13.22" y="4.64" size="0.8128" layer="21">2</text>
 <text x="12.55" y="7.1" size="0.8128" layer="21">9</text>
 </package>
-<package name="PTR_AK700_2_5.0">
-<description>Šroubovací svorkovnice do DPS, zelená.
-
-Počet kontaktů = 2
-Rozteč kontaktů = 5mm
-Jmenovité napětí = 250V
-Jmenovitý proud = 24A
-Orientace vodiče = vertikální
-Možnost spojování = ano
-Výrobce PTR</description>
-<wire x1="-5" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
-<wire x1="5" y1="12" x2="5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="12" x2="-5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="-10" x2="5" y2="-10" width="0.127" layer="21"/>
-<pad name="GND" x="-2.5" y="11.1" drill="0.9" diameter="1.3" shape="long"/>
-<pad name="INPUT" x="2.5" y="11.1" drill="0.9" diameter="1.3" shape="long"/>
-<text x="-3.9" y="12.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.757" y="8.995" size="0.8128" layer="21">GND</text>
+<package name="WEBP88_RJ45_SINGLE">
+<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
+<pad name="RJ45_1" x="-3.57" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_3" x="-1.53" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_5" x="0.51" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_7" x="2.55" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_2" x="-2.55" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_4" x="-0.51" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_6" x="1.53" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_8" x="3.57" y="1.87" drill="0.8" shape="square"/>
+<hole x="-7.5" y="-0.43" drill="2.36"/>
+<hole x="7.5" y="-0.43" drill="2.36"/>
+<wire x1="-7.5" y1="6.43" x2="7.5" y2="6.43" width="0.127" layer="21"/>
+<wire x1="7.5" y1="6.43" x2="7.5" y2="-6.43" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-6.43" x2="-7.5" y2="-6.43" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-6.43" x2="-7.5" y2="6.43" width="0.127" layer="21"/>
+<text x="-5.207" y="3.81" size="1.27" layer="21">1</text>
+<text x="4.445" y="1.27" size="1.27" layer="21">8</text>
+<text x="-7.62" y="6.731" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -1592,7 +1597,7 @@ design rules under a new name.</description>
 <param name="Efforts" value="0"/>
 <param name="TopRouterVariant" value="0"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.1" value="-"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -1683,7 +1688,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="C1" library="rcl" package="C025-025X050" value="0.1uF" x="5.969" y="36.449" rot="R90"/>
-<element name="C2" library="rcl" package="C050-025X075" value="0.1uF" x="37.338" y="14.986" rot="R270"/>
+<element name="C2" library="rcl" package="C050-025X075" value="0.1uF" x="37.338" y="15.494" rot="R270"/>
 <element name="C7" library="rcl" package="C050-025X075" value="10 uF" x="17.907" y="26.035"/>
 <element name="CHIP" library="microchip" package="DIL28-3" value="PIC18F2480-I/SP" x="28.067" y="21.336" rot="R270">
 <attribute name="MPN" value="PIC18F2480-I/SP" x="28.067" y="21.336" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1695,15 +1700,15 @@ design rules under a new name.</description>
 <element name="CXT2" library="rcl" package="C025-030X050" value="33pF" x="11.557" y="13.716"/>
 <element name="DEBUGGING" library="pinhead" package="1X05" value="" x="29.337" y="44.196"/>
 <element name="MCLR_J" library="jumper" package="JP1" value="" x="13.97" y="36.449"/>
-<element name="MCP2561" library="PoJD" package="MCP2561_PDIP" value="MCP2561MCP" x="49.911" y="34.036"/>
+<element name="MCP2561" library="PoJD" package="MCP2561_PDIP" value="MCP2561MCP" x="52.784" y="8.805"/>
 <element name="R1" library="rcl" package="0207/10" value="10000" x="7.493" y="48.006" rot="R90"/>
 <element name="R2" library="rcl" package="0207/10" value="470" x="18.923" y="40.386" rot="R270"/>
 <element name="R3" library="rcl" package="0207/10" value="1000" x="9.144" y="4.699"/>
 <element name="RJ45CONNECTOR" library="PoJD" package="WEBP88_RJ45_DOUBLE" value="WEBP88_DDOUBLE" x="25.527" y="60.706" rot="R180"/>
 <element name="STATUSLED" library="led" package="LED5MM" value="" x="5.334" y="27.94" rot="R180"/>
-<element name="SWITCHINPUT" library="PoJD" package="PTR_AK700_2_5.0" value="PTRAK700250GME" x="50.419" y="13.716"/>
-<element name="C3" library="rcl" package="C050-025X075" value="0.1uF" x="40.513" y="35.306" rot="R270"/>
+<element name="C3" library="rcl" package="C050-025X075" value="0.1uF" x="42.751" y="7.62" rot="R270"/>
 <element name="XTAL" library="special" package="QS" value="16MHz" x="17.907" y="16.256" rot="R90"/>
+<element name="INPUTS" library="PoJD" package="WEBP88_RJ45_SINGLE" value="WEBP88_SSINGLE" x="55.813" y="28.194" rot="R90"/>
 </elements>
 <signals>
 <signal name="+5V">
@@ -1714,32 +1719,35 @@ design rules under a new name.</description>
 <contactref element="RJ45CONNECTOR" pad="RJ4529"/>
 <contactref element="DEBUGGING" pad="2"/>
 <contactref element="C3" pad="2"/>
-<wire x1="40.513" y1="32.766" x2="45.911" y2="32.766" width="0.4064" layer="1"/>
 <wire x1="14.097" y1="53.116" x2="14.097" y2="50.546" width="1.27" layer="1"/>
 <wire x1="14.097" y1="50.546" x2="15.367" y2="49.276" width="1.27" layer="1" curve="90"/>
 <wire x1="15.367" y1="49.276" x2="26.797" y2="49.276" width="1.27" layer="1"/>
 <wire x1="28.067" y1="50.546" x2="26.797" y2="49.276" width="1.27" layer="1" curve="-90"/>
-<wire x1="26.797" y1="49.276" x2="26.797" y2="44.196" width="0.4064" layer="1"/>
-<wire x1="37.338" y1="17.526" x2="31.877" y2="17.526" width="0.4064" layer="1"/>
-<wire x1="28.067" y1="34.036" x2="26.797" y2="35.306" width="0.4064" layer="1" curve="-90"/>
-<wire x1="26.797" y1="35.306" x2="26.797" y2="44.196" width="0.4064" layer="1"/>
 <wire x1="14.351" y1="50.038" x2="14.097" y2="50.546" width="0.4064" layer="1"/>
 <wire x1="7.493" y1="53.086" x2="7.523" y2="53.116" width="0.4064" layer="1" curve="-90"/>
-<wire x1="7.523" y1="53.116" x2="14.097" y2="53.116" width="0.4064" layer="1"/>
-<wire x1="28.067" y1="34.036" x2="39.243" y2="34.036" width="0.4064" layer="1"/>
-<wire x1="40.513" y1="32.766" x2="39.243" y2="34.036" width="0.4064" layer="1" curve="90"/>
-<wire x1="37.338" y1="17.526" x2="40.513" y2="20.701" width="0.4064" layer="1" curve="90"/>
-<wire x1="40.513" y1="20.701" x2="40.513" y2="32.766" width="0.4064" layer="1"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4515"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4527"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4517"/>
-<wire x1="16.637" y1="53.116" x2="14.097" y2="53.116" width="0.4064" layer="1"/>
-<wire x1="30.607" y1="53.116" x2="33.147" y2="53.116" width="0.4064" layer="1"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4519"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4525"/>
-<wire x1="16.637" y1="53.116" x2="19.177" y2="53.116" width="0.4064" layer="1"/>
-<wire x1="28.067" y1="53.116" x2="30.607" y2="53.116" width="0.4064" layer="1"/>
 <wire x1="28.067" y1="50.546" x2="28.067" y2="53.116" width="1.27" layer="1"/>
+<wire x1="14.097" y1="53.116" x2="16.637" y2="53.116" width="1.27" layer="1"/>
+<wire x1="16.637" y1="53.116" x2="19.177" y2="53.116" width="1.27" layer="1"/>
+<wire x1="30.607" y1="53.116" x2="28.067" y2="53.116" width="1.27" layer="1"/>
+<wire x1="30.607" y1="53.116" x2="33.147" y2="53.116" width="1.27" layer="1"/>
+<wire x1="14.097" y1="53.116" x2="14.067" y2="53.086" width="1.27" layer="1" curve="-90"/>
+<wire x1="14.067" y1="53.086" x2="7.493" y2="53.086" width="1.27" layer="1"/>
+<wire x1="26.797" y1="49.276" x2="26.797" y2="44.196" width="1.27" layer="1"/>
+<wire x1="31.877" y1="17.526" x2="26.797" y2="22.606" width="1.27" layer="1" curve="-90"/>
+<wire x1="26.797" y1="22.606" x2="26.797" y2="44.196" width="1.27" layer="1"/>
+<wire x1="31.877" y1="17.526" x2="32.004" y2="17.399" width="1.27" layer="1" curve="90"/>
+<wire x1="32.004" y1="17.399" x2="37.211" y2="17.399" width="1.27" layer="1"/>
+<wire x1="37.211" y1="17.399" x2="37.338" y2="17.526" width="1.27" layer="1" curve="90"/>
+<wire x1="37.338" y1="17.526" x2="37.338" y2="18.034" width="1.27" layer="1"/>
+<wire x1="42.751" y1="5.08" x2="39.878" y2="7.953" width="1.27" layer="1" curve="-90"/>
+<wire x1="39.878" y1="7.953" x2="39.878" y2="14.732" width="1.27" layer="1"/>
+<wire x1="37.211" y1="17.399" x2="39.878" y2="14.732" width="1.27" layer="1" curve="-90"/>
+<wire x1="42.751" y1="5.08" x2="48.784" y2="7.535" width="1.27" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="C1" pad="2"/>
@@ -1750,42 +1758,26 @@ design rules under a new name.</description>
 <contactref element="CXT1" pad="1"/>
 <contactref element="STATUSLED" pad="A"/>
 <contactref element="MCP2561" pad="VSS"/>
-<contactref element="SWITCHINPUT" pad="GND"/>
 <contactref element="CHIP" pad="8"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4514"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4528"/>
 <contactref element="DEBUGGING" pad="3"/>
 <contactref element="C3" pad="1"/>
 <polygon width="0.4064" layer="1" spacing="0.254" isolate="0.8128">
-<vertex x="1.016" y="71.501"/>
-<vertex x="60.833" y="70.866"/>
-<vertex x="60.833" y="1.016"/>
-<vertex x="0.889" y="0.889"/>
+<vertex x="0.5" y="71.636"/>
+<vertex x="64.095" y="71.636"/>
+<vertex x="64.095" y="0.5"/>
+<vertex x="0.5" y="0.5"/>
 </polygon>
 <polygon width="0.4064" layer="16" spacing="0.254" isolate="0.8128">
-<vertex x="1.016" y="71.501"/>
-<vertex x="60.833" y="70.866"/>
-<vertex x="60.833" y="1.016"/>
-<vertex x="0.889" y="0.889"/>
+<vertex x="0.5" y="71.636"/>
+<vertex x="64.095" y="71.636"/>
+<vertex x="64.095" y="0.5"/>
+<vertex x="0.5" y="0.5"/>
 </polygon>
-<via x="4.699" y="68.453" extent="1-16" drill="0.4" shape="square"/>
-<via x="4.572" y="58.801" extent="1-16" drill="0.4" shape="square"/>
 <via x="46.101" y="67.691" extent="1-16" drill="0.4" shape="square"/>
-<via x="52.451" y="62.992" extent="1-16" drill="0.4" shape="square"/>
-<via x="58.039" y="57.15" extent="1-16" drill="0.4" shape="square"/>
-<via x="46.101" y="59.436" extent="1-16" drill="0.4" shape="square"/>
-<via x="48.641" y="51.689" extent="1-16" drill="0.4" shape="square"/>
-<via x="53.594" y="44.45" extent="1-16" drill="0.4" shape="square"/>
-<via x="41.275" y="46.101" extent="1-16" drill="0.4" shape="square"/>
+<via x="53.213" y="62.611" extent="1-16" drill="0.4" shape="square"/>
 <via x="12.827" y="46.228" extent="1-16" drill="0.4" shape="square"/>
-<via x="36.576" y="30.607" extent="1-16" drill="0.4" shape="square"/>
-<via x="36.703" y="24.257" extent="1-16" drill="0.4" shape="square"/>
-<via x="43.18" y="24.384" extent="1-16" drill="0.4" shape="square"/>
-<via x="57.912" y="26.797" extent="1-16" drill="0.4" shape="square"/>
-<via x="57.912" y="17.018" extent="1-16" drill="0.4" shape="square"/>
-<via x="58.039" y="5.842" extent="1-16" drill="0.4" shape="square"/>
-<via x="42.545" y="13.462" extent="1-16" drill="0.4" shape="square"/>
-<via x="39.497" y="6.096" extent="1-16" drill="0.4" shape="square"/>
 <via x="20.574" y="4.699" extent="1-16" drill="0.4" shape="square"/>
 <via x="14.859" y="8.509" extent="1-16" drill="0.4" shape="square"/>
 <via x="6.858" y="8.763" extent="1-16" drill="0.4" shape="square"/>
@@ -1799,6 +1791,18 @@ design rules under a new name.</description>
 <contactref element="RJ45CONNECTOR" pad="RJ4524"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4526"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4516"/>
+<contactref element="INPUTS" pad="RJ45_1"/>
+<via x="39.37" y="38.608" extent="1-16" drill="0.4" shape="square"/>
+<via x="47.244" y="38.227" extent="1-16" drill="0.4" shape="square"/>
+<via x="58.801" y="67.691" extent="1-16" drill="0.4" shape="square"/>
+<via x="59.055" y="58.039" extent="1-16" drill="0.4" shape="square"/>
+<via x="45.847" y="58.039" extent="1-16" drill="0.4" shape="square"/>
+<via x="51.816" y="50.038" extent="1-16" drill="0.4" shape="square"/>
+<via x="54.483" y="43.815" extent="1-16" drill="0.4" shape="square"/>
+<via x="45.212" y="16.891" extent="1-16" drill="0.4" shape="square"/>
+<via x="61.595" y="16.256" extent="1-16" drill="0.4" shape="square"/>
+<via x="36.703" y="5.842" extent="1-16" drill="0.4" shape="square"/>
+<via x="4.191" y="59.944" extent="1-16" drill="0.4" shape="square"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="1"/>
@@ -1843,25 +1847,17 @@ design rules under a new name.</description>
 <contactref element="STATUSLED" pad="K"/>
 <wire x1="4.064" y1="4.699" x2="4.064" y2="27.94" width="0.4064" layer="1"/>
 </signal>
-<signal name="INPUT">
-<contactref element="CHIP" pad="21"/>
-<contactref element="SWITCHINPUT" pad="INPUT"/>
-<wire x1="52.919" y1="24.816" x2="48.169" y2="20.066" width="0.4064" layer="16" curve="-90"/>
-<wire x1="48.169" y1="20.066" x2="31.877" y2="20.066" width="0.4064" layer="16"/>
-</signal>
 <signal name="CANH">
 <contactref element="MCP2561" pad="CANH"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4512"/>
 <contactref element="RJ45CONNECTOR" pad="RJ4522"/>
-<wire x1="22.987" y1="55.656" x2="22.987" y2="56.896" width="1.27" layer="16"/>
-<wire x1="22.987" y1="56.896" x2="24.257" y2="58.166" width="1.27" layer="16" curve="-90"/>
-<wire x1="24.257" y1="58.166" x2="35.687" y2="58.166" width="1.27" layer="16"/>
-<wire x1="36.957" y1="55.656" x2="36.957" y2="56.896" width="1.27" layer="16"/>
-<wire x1="36.957" y1="56.896" x2="35.687" y2="58.166" width="1.27" layer="16" curve="90"/>
-<wire x1="53.911" y1="35.306" x2="57.912" y2="39.307" width="0.4064" layer="16" curve="90"/>
-<wire x1="57.912" y1="39.307" x2="57.912" y2="46.101" width="0.4064" layer="16"/>
-<wire x1="57.912" y1="46.101" x2="48.357" y2="55.656" width="0.4064" layer="16" curve="90"/>
-<wire x1="48.357" y1="55.656" x2="36.957" y2="55.656" width="0.4064" layer="16"/>
+<wire x1="56.784" y1="10.075" x2="59.309" y2="12.6" width="0.4064" layer="16" curve="90"/>
+<wire x1="59.309" y1="12.6" x2="59.309" y2="50.8" width="0.4064" layer="16"/>
+<wire x1="59.309" y1="50.8" x2="54.453" y2="55.656" width="0.4064" layer="16" curve="90"/>
+<wire x1="54.453" y1="55.656" x2="36.957" y2="55.656" width="0.4064" layer="16"/>
+<wire x1="22.987" y1="55.656" x2="26.259" y2="58.928" width="1.27" layer="16" curve="-90"/>
+<wire x1="26.259" y1="58.928" x2="33.685" y2="58.928" width="1.27" layer="16"/>
+<wire x1="36.957" y1="55.656" x2="33.685" y2="58.928" width="1.27" layer="16" curve="90"/>
 </signal>
 <signal name="CANL">
 <contactref element="RJ45CONNECTOR" pad="RJ4523"/>
@@ -1872,38 +1868,34 @@ design rules under a new name.</description>
 <wire x1="24.257" y1="49.276" x2="34.417" y2="49.276" width="1.27" layer="16"/>
 <wire x1="35.687" y1="53.116" x2="35.687" y2="50.546" width="1.27" layer="16"/>
 <wire x1="35.687" y1="50.546" x2="34.417" y2="49.276" width="1.27" layer="16" curve="-90"/>
-<wire x1="52.324" y1="32.766" x2="53.911" y2="32.766" width="0.4064" layer="16"/>
-<wire x1="52.324" y1="32.766" x2="49.911" y2="35.179" width="0.4064" layer="16" curve="-90"/>
-<wire x1="49.911" y1="35.179" x2="49.911" y2="39.497" width="0.4064" layer="16"/>
-<wire x1="49.911" y1="39.497" x2="36.292" y2="53.116" width="0.4064" layer="16" curve="90"/>
-<wire x1="36.292" y1="53.116" x2="35.687" y2="53.116" width="0.4064" layer="16"/>
-</signal>
-<signal name="PGC">
-<contactref element="CHIP" pad="27"/>
-<contactref element="DEBUGGING" pad="5"/>
-<wire x1="34.417" y1="44.196" x2="34.417" y2="36.576" width="0.4064" layer="1"/>
-<wire x1="34.417" y1="36.576" x2="33.147" y2="35.306" width="0.4064" layer="1" curve="-90"/>
-<wire x1="33.147" y1="35.306" x2="31.877" y2="35.306" width="0.4064" layer="1"/>
+<wire x1="56.784" y1="7.535" x2="52.578" y2="11.741" width="0.4064" layer="16" curve="-90"/>
+<wire x1="52.578" y1="11.741" x2="52.578" y2="16.002" width="0.4064" layer="16"/>
+<wire x1="52.578" y1="16.002" x2="47.625" y2="20.955" width="0.4064" layer="16" curve="90"/>
+<wire x1="47.625" y1="20.955" x2="46.863" y2="20.955" width="0.4064" layer="16"/>
+<wire x1="46.863" y1="20.955" x2="42.037" y2="25.781" width="0.4064" layer="16" curve="-90"/>
+<wire x1="42.037" y1="25.781" x2="42.037" y2="50.419" width="0.4064" layer="16"/>
+<wire x1="42.037" y1="50.419" x2="39.34" y2="53.116" width="0.4064" layer="16" curve="90"/>
+<wire x1="39.34" y1="53.116" x2="35.687" y2="53.116" width="0.4064" layer="16"/>
 </signal>
 <signal name="TXD">
 <contactref element="MCP2561" pad="TXD"/>
-<contactref element="CHIP" pad="23"/>
-<wire x1="42.99" y1="40.767" x2="31.877" y2="40.767" width="0.4064" layer="16"/>
-<wire x1="31.877" y1="40.767" x2="28.321" y2="37.719" width="0.4064" layer="16" curve="90"/>
-<wire x1="28.321" y1="37.719" x2="28.321" y2="28.702" width="0.4064" layer="16"/>
-<wire x1="31.877" y1="25.146" x2="28.321" y2="28.702" width="0.4064" layer="16" curve="-90"/>
-<wire x1="45.911" y1="37.846" x2="42.99" y2="40.767" width="0.4064" layer="16" curve="90"/>
+<contactref element="CHIP" pad="17"/>
+<wire x1="48.784" y1="12.615" x2="48.699" y2="12.7" width="0.4064" layer="16" curve="90"/>
+<wire x1="48.699" y1="12.7" x2="41.021" y2="12.7" width="0.4064" layer="16"/>
+<wire x1="41.021" y1="12.7" x2="39.878" y2="11.557" width="0.4064" layer="16" curve="90"/>
+<wire x1="39.878" y1="11.557" x2="39.878" y2="10.795" width="0.4064" layer="16"/>
+<wire x1="39.878" y1="10.795" x2="38.989" y2="9.906" width="0.4064" layer="16" curve="-90"/>
+<wire x1="38.989" y1="9.906" x2="31.877" y2="9.906" width="0.4064" layer="16"/>
 </signal>
 <signal name="RXD">
 <contactref element="MCP2561" pad="RXD"/>
-<contactref element="CHIP" pad="24"/>
-<wire x1="45.911" y1="30.226" x2="43.371" y2="27.686" width="0.4064" layer="16" curve="-90"/>
-<wire x1="43.371" y1="27.686" x2="31.877" y2="27.686" width="0.4064" layer="16"/>
-</signal>
-<signal name="PGD">
-<contactref element="CHIP" pad="28"/>
-<contactref element="DEBUGGING" pad="4"/>
-<wire x1="31.877" y1="44.196" x2="31.877" y2="37.846" width="0.4064" layer="1"/>
+<contactref element="CHIP" pad="18"/>
+<wire x1="48.784" y1="4.995" x2="46.075" y2="2.286" width="0.4064" layer="16" curve="-90"/>
+<wire x1="46.075" y1="2.286" x2="29.845" y2="2.286" width="0.4064" layer="16"/>
+<wire x1="29.845" y1="2.286" x2="28.321" y2="3.81" width="0.4064" layer="16" curve="-90"/>
+<wire x1="28.321" y1="3.81" x2="28.321" y2="10.922" width="0.4064" layer="16"/>
+<wire x1="28.321" y1="10.922" x2="29.845" y2="12.446" width="0.4064" layer="16" curve="-90"/>
+<wire x1="29.845" y1="12.446" x2="31.877" y2="12.446" width="0.4064" layer="16"/>
 </signal>
 <signal name="OSC2">
 <contactref element="CHIP" pad="10"/>
@@ -1916,81 +1908,78 @@ design rules under a new name.</description>
 <signal name="STBY">
 <contactref element="MCP2561" pad="STBY"/>
 <contactref element="CHIP" pad="14"/>
-<wire x1="24.257" y1="4.826" x2="53.911" y2="37.846" width="0" layer="19" extent="1-1"/>
+<wire x1="24.257" y1="4.826" x2="26.797" y2="2.286" width="0.4064" layer="1" curve="90"/>
+<wire x1="26.797" y1="2.286" x2="59.563" y2="2.286" width="0.4064" layer="1"/>
+<wire x1="59.563" y1="2.286" x2="61.087" y2="3.81" width="0.4064" layer="1" curve="90"/>
+<wire x1="61.087" y1="3.81" x2="61.087" y2="10.795" width="0.4064" layer="1"/>
+<wire x1="61.087" y1="10.795" x2="59.267" y2="12.615" width="0.4064" layer="1" curve="90"/>
+<wire x1="59.267" y1="12.615" x2="56.784" y2="12.615" width="0.4064" layer="1"/>
+</signal>
+<signal name="INPUT4">
+<contactref element="CHIP" pad="24"/>
+<contactref element="INPUTS" pad="RJ45_5"/>
+<wire x1="31.877" y1="27.686" x2="44.831" y2="27.686" width="0.4064" layer="1"/>
+<wire x1="44.831" y1="27.686" x2="45.212" y2="28.067" width="0.4064" layer="1" curve="90"/>
+<wire x1="45.212" y1="28.067" x2="45.212" y2="28.194" width="0.4064" layer="1"/>
+<wire x1="45.212" y1="28.194" x2="45.722" y2="28.704" width="0.4064" layer="1" curve="-90"/>
+<wire x1="45.722" y1="28.704" x2="51.403" y2="28.704" width="0.4064" layer="1"/>
+</signal>
+<signal name="INPUT3">
+<contactref element="CHIP" pad="23"/>
+<contactref element="INPUTS" pad="RJ45_4"/>
+<wire x1="53.943" y1="27.684" x2="53.941" y2="27.686" width="0.4064" layer="1" curve="90"/>
+<wire x1="53.941" y1="27.686" x2="47.244" y2="27.686" width="0.4064" layer="1"/>
+<wire x1="47.244" y1="27.686" x2="46.863" y2="27.305" width="0.4064" layer="1" curve="90"/>
+<wire x1="46.863" y1="27.305" x2="44.704" y2="25.146" width="0.4064" layer="1" curve="-90"/>
+<wire x1="44.704" y1="25.146" x2="31.877" y2="25.146" width="0.4064" layer="1"/>
+</signal>
+<signal name="INPUT2">
+<contactref element="CHIP" pad="22"/>
+<contactref element="INPUTS" pad="RJ45_3"/>
+<wire x1="31.877" y1="22.606" x2="46.863" y2="22.606" width="0.4064" layer="1"/>
+<wire x1="46.863" y1="22.606" x2="48.514" y2="24.257" width="0.4064" layer="1" curve="90"/>
+<wire x1="48.514" y1="24.257" x2="48.514" y2="25.273" width="0.4064" layer="1"/>
+<wire x1="48.514" y1="25.273" x2="49.905" y2="26.664" width="0.4064" layer="1" curve="-90"/>
+<wire x1="49.905" y1="26.664" x2="51.403" y2="26.664" width="0.4064" layer="1"/>
+</signal>
+<signal name="INPUT1">
+<contactref element="CHIP" pad="21"/>
+<contactref element="INPUTS" pad="RJ45_2"/>
+<wire x1="53.943" y1="25.644" x2="48.365" y2="20.066" width="0.4064" layer="1" curve="-90"/>
+<wire x1="48.365" y1="20.066" x2="31.877" y2="20.066" width="0.4064" layer="1"/>
+</signal>
+<signal name="INPUT5">
+<contactref element="CHIP" pad="25"/>
+<contactref element="INPUTS" pad="RJ45_6"/>
+<wire x1="53.943" y1="29.724" x2="53.937" y2="29.718" width="0.4064" layer="1" curve="-90"/>
+<wire x1="53.937" y1="29.718" x2="45.593" y2="29.718" width="0.4064" layer="1"/>
+<wire x1="45.593" y1="29.718" x2="45.339" y2="29.972" width="0.4064" layer="1" curve="-90"/>
+<wire x1="45.339" y1="29.972" x2="45.339" y2="30.099" width="0.4064" layer="1"/>
+<wire x1="45.339" y1="30.099" x2="45.212" y2="30.226" width="0.4064" layer="1" curve="90"/>
+<wire x1="45.212" y1="30.226" x2="31.877" y2="30.226" width="0.4064" layer="1"/>
+</signal>
+<signal name="INPUT6">
+<contactref element="CHIP" pad="26"/>
+<contactref element="INPUTS" pad="RJ45_7"/>
+<wire x1="51.403" y1="30.744" x2="49.381" y2="32.766" width="0.4064" layer="1" curve="90"/>
+<wire x1="49.381" y1="32.766" x2="31.877" y2="32.766" width="0.4064" layer="1"/>
+</signal>
+<signal name="PGC/INPUT7">
+<contactref element="CHIP" pad="27"/>
+<contactref element="INPUTS" pad="RJ45_8"/>
+<contactref element="DEBUGGING" pad="5"/>
+<wire x1="31.877" y1="35.306" x2="34.417" y2="37.846" width="0.4064" layer="1" curve="90"/>
+<wire x1="34.417" y1="37.846" x2="34.417" y2="44.196" width="0.4064" layer="1"/>
+<wire x1="53.943" y1="31.764" x2="41.511" y2="44.196" width="0.4064" layer="1" curve="90"/>
+<wire x1="41.511" y1="44.196" x2="34.417" y2="44.196" width="0.4064" layer="1"/>
+</signal>
+<signal name="PGD/INPUT8">
+<contactref element="CHIP" pad="28"/>
+<contactref element="DEBUGGING" pad="4"/>
+<wire x1="31.877" y1="37.846" x2="31.877" y2="44.196" width="0.4064" layer="1"/>
 </signal>
 </signals>
 <errors>
-<approved hash="18,29,d61da8b6ea59aae6"/>
-<approved hash="18,29,5d476e656e725930"/>
-<approved hash="18,29,080e98b80718dfa4"/>
-<approved hash="18,29,93f43c3eee540994"/>
-<approved hash="18,29,014685971221d696"/>
-<approved hash="18,29,9bb021e5fa610052"/>
-<approved hash="18,29,2cc868301a98a2ba"/>
-<approved hash="18,29,44297a4c1ad2dd81"/>
-<approved hash="18,29,4ea957333d39d5e1"/>
-<approved hash="18,29,4cb907c76f5dd4f1"/>
-<approved hash="18,29,4c39f6629ef8d471"/>
-<approved hash="18,29,4529eaef8875de41"/>
-<approved hash="18,29,7e59dcb487aae671"/>
-<approved hash="18,29,5d292ce05276c241"/>
-<approved hash="18,29,46a9d339b1dfdde1"/>
-<approved hash="18,29,4439385b58f1dc71"/>
-<approved hash="18,29,4aa91d3a7320dde1"/>
-<approved hash="18,29,5d196d111407c671"/>
-<approved hash="18,29,4629609603bcde61"/>
-<approved hash="18,29,7a5926b579abe271"/>
-<approved hash="18,29,4cb9c5dead54d4f1"/>
-<approved hash="18,29,1a2ccad7094edc85"/>
-<approved hash="18,29,d09a39a4b7ec5fc2"/>
-<approved hash="18,29,80ce41470da13b54"/>
-<approved hash="18,29,01bfd226f22ab8cb"/>
-<approved hash="18,29,0f2aa72c9e3eaf40"/>
-<approved hash="18,29,e139869601fb1610"/>
-<approved hash="18,29,d40987ee4cfb6b78"/>
-<approved hash="18,29,50d39c28e1433b84"/>
-<approved hash="18,29,38656fa5fde1b83d"/>
-<approved hash="18,29,30ee9d5aac9b4350"/>
-<approved hash="18,29,a14db4da5fd621c9"/>
-<approved hash="18,29,692807d007c202b2"/>
-<approved hash="18,29,2d3a14968f070f10"/>
-<approved hash="18,29,5a0a15ee80077278"/>
-<approved hash="18,29,422a92d6a1b1ae83"/>
-<approved hash="18,29,789c61a2ef132dc3"/>
-<approved hash="18,29,80d6454745a5834f"/>
-<approved hash="18,29,6b2c27c7ccd2f952"/>
-<approved hash="18,29,81adb6caa4c1eacd"/>
-<approved hash="18,29,1d38869779116013"/>
-<approved hash="18,29,ac0887edb0111d79"/>
-<approved hash="18,29,f5e3bf21b1930b83"/>
-<approved hash="18,29,fc23c3dac54c0383"/>
-<approved hash="18,29,f4274fc041720a47"/>
-<approved hash="18,29,fc5fdae4de5e0387"/>
-<approved hash="18,29,f423ee8de0270bcb"/>
-<approved hash="18,29,fc27a488a23a03c7"/>
-<approved hash="18,29,e46fd7b3cae51b47"/>
-<approved hash="18,29,fc63507956ab0343"/>
-<approved hash="18,29,c42366d25a443b83"/>
-<approved hash="18,29,fcdf6a8b6c3d03c7"/>
-<approved hash="18,29,c427a0d7a0410387"/>
-<approved hash="18,29,e463927e8ca81b4b"/>
-<approved hash="18,29,f5ef7d3c73960b87"/>
-<approved hash="18,29,fc2381c5877f027b"/>
-<approved hash="18,29,bc2228d939aa258b"/>
-<approved hash="18,29,e094dbaa1108a6cc"/>
-<approved hash="18,29,98cf0d4651a1b556"/>
-<approved hash="18,29,f12b57ca75d8ac4c"/>
-<approved hash="18,29,f1b32cc0f1cc53ca"/>
-<approved hash="18,29,013b48940b1cd112"/>
-<approved hash="18,29,de0b49ecac1cac7a"/>
-<approved hash="18,29,222d9ad6499fe084"/>
-<approved hash="18,29,909b69a58f3d63c3"/>
-<approved hash="18,29,18c6014d45ae735e"/>
-<approved hash="18,29,c72b37febaec3344"/>
-<approved hash="18,29,91bb1af46ef89cca"/>
-<approved hash="18,29,013c06929129ea13"/>
-<approved hash="18,29,440c07edac29977c"/>
-<approved hash="18,29,4547de79de0f4151"/>
 <approved hash="18,29,a007777b72f15f90"/>
 <approved hash="18,29,20a3392b39282462"/>
 <approved hash="18,29,533f34ff0b9a87b8"/>
@@ -2004,6 +1993,77 @@ design rules under a new name.</description>
 <approved hash="18,29,44075138adc24062"/>
 <approved hash="18,29,d1d26da87af51190"/>
 <approved hash="18,29,73b05dd3a2597627"/>
+<approved hash="18,29,5d476e656e725930"/>
+<approved hash="18,29,d61da8b6ea59aae6"/>
+<approved hash="18,29,080e98b80718dfa4"/>
+<approved hash="18,29,93f43c3eee540994"/>
+<approved hash="18,29,014685971221d696"/>
+<approved hash="18,29,9bb021e5fa610052"/>
+<approved hash="18,29,2cc868301a98a2ba"/>
+<approved hash="18,29,7e59dcb487aae671"/>
+<approved hash="18,29,4cb9c5dead54d4f1"/>
+<approved hash="18,29,7a5926b579abe271"/>
+<approved hash="18,29,4439385b58f1dc71"/>
+<approved hash="18,29,5d292ce05276c241"/>
+<approved hash="18,29,4cb907c76f5dd4f1"/>
+<approved hash="18,29,4c39f6629ef8d471"/>
+<approved hash="18,29,4ea957333d39d5e1"/>
+<approved hash="18,29,5d196d111407c671"/>
+<approved hash="18,29,4629609603bcde61"/>
+<approved hash="18,29,4aa91d3a7320dde1"/>
+<approved hash="18,29,46a9d339b1dfdde1"/>
+<approved hash="18,29,4529eaef8875de41"/>
+<approved hash="18,29,44297a4c1ad2dd81"/>
+<approved hash="18,29,d09a39a4b7ec5fc2"/>
+<approved hash="18,29,1a2ccad7094edc85"/>
+<approved hash="18,29,80ce41470da13b54"/>
+<approved hash="18,29,01bfd226f22ab8cb"/>
+<approved hash="18,29,0f2aa72c9e3eaf40"/>
+<approved hash="18,29,e139869601fb1610"/>
+<approved hash="18,29,d40987ee4cfb6b78"/>
+<approved hash="18,29,38656fa5fde1b83d"/>
+<approved hash="18,29,50d39c28e1433b84"/>
+<approved hash="18,29,30ee9d5aac9b4350"/>
+<approved hash="18,29,692807d007c202b2"/>
+<approved hash="18,29,a14db4da5fd621c9"/>
+<approved hash="18,29,2d3a14968f070f10"/>
+<approved hash="18,29,5a0a15ee80077278"/>
+<approved hash="18,29,789c61a2ef132dc3"/>
+<approved hash="18,29,422a92d6a1b1ae83"/>
+<approved hash="18,29,80d6454745a5834f"/>
+<approved hash="18,29,81adb6caa4c1eacd"/>
+<approved hash="18,29,6b2c27c7ccd2f952"/>
+<approved hash="18,29,1d38869779116013"/>
+<approved hash="18,29,ac0887edb0111d79"/>
+<approved hash="18,29,f423ee8de0270bcb"/>
+<approved hash="18,29,c42366d25a443b83"/>
+<approved hash="18,29,f4274fc041720a47"/>
+<approved hash="18,29,fc5fdae4de5e0387"/>
+<approved hash="18,29,fc63507956ab0343"/>
+<approved hash="18,29,e46fd7b3cae51b47"/>
+<approved hash="18,29,c427a0d7a0410387"/>
+<approved hash="18,29,fc2381c5877f027b"/>
+<approved hash="18,29,fcdf6a8b6c3d03c7"/>
+<approved hash="18,29,f5ef7d3c73960b87"/>
+<approved hash="18,29,e463927e8ca81b4b"/>
+<approved hash="18,29,fc27a488a23a03c7"/>
+<approved hash="18,29,fc23c3dac54c0383"/>
+<approved hash="18,29,f5e3bf21b1930b83"/>
+<approved hash="18,29,bc2228d939aa258b"/>
+<approved hash="18,29,e094dbaa1108a6cc"/>
+<approved hash="18,29,98cf0d4651a1b556"/>
+<approved hash="18,29,f1b32cc0f1cc53ca"/>
+<approved hash="18,29,f12b57ca75d8ac4c"/>
+<approved hash="18,29,de0b49ecac1cac7a"/>
+<approved hash="18,29,013b48940b1cd112"/>
+<approved hash="18,29,222d9ad6499fe084"/>
+<approved hash="18,29,909b69a58f3d63c3"/>
+<approved hash="18,29,18c6014d45ae735e"/>
+<approved hash="18,29,91bb1af46ef89cca"/>
+<approved hash="18,29,c72b37febaec3344"/>
+<approved hash="18,29,440c07edac29977c"/>
+<approved hash="18,29,013c06929129ea13"/>
+<approved hash="18,29,4547de79de0f4151"/>
 </errors>
 </board>
 </drawing>

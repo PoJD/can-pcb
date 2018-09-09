@@ -754,25 +754,6 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <text x="-13.22" y="4.64" size="0.8128" layer="21">2</text>
 <text x="12.55" y="7.1" size="0.8128" layer="21">9</text>
 </package>
-<package name="PTR_AK700_2_5.0">
-<description>Šroubovací svorkovnice do DPS, zelená.
-
-Počet kontaktů = 2
-Rozteč kontaktů = 5mm
-Jmenovité napětí = 250V
-Jmenovitý proud = 24A
-Orientace vodiče = vertikální
-Možnost spojování = ano
-Výrobce PTR</description>
-<wire x1="-5" y1="12" x2="5" y2="12" width="0.127" layer="21"/>
-<wire x1="5" y1="12" x2="5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="12" x2="-5" y2="-10" width="0.127" layer="21"/>
-<wire x1="-5" y1="-10" x2="5" y2="-10" width="0.127" layer="21"/>
-<pad name="GND" x="-2.5" y="11.1" drill="0.9" diameter="1.3" shape="long"/>
-<pad name="INPUT" x="2.5" y="11.1" drill="0.9" diameter="1.3" shape="long"/>
-<text x="-3.9" y="12.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.757" y="8.995" size="0.8128" layer="21">GND</text>
-</package>
 <package name="MCP2561_PDIP">
 <description>High-Speed CAN Transceiver
 See http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf
@@ -799,6 +780,26 @@ discharge (ESD).</description>
 <wire x1="2.5" y1="3.81" x2="-2.5" y2="3.81" width="0.127" layer="21"/>
 <text x="-3.1" y="4.8" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.0456" y="4.8354" size="0.8128" layer="21">TXD</text>
+</package>
+<package name="WEBP88_RJ45_SINGLE">
+<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
+<pad name="RJ45_1" x="-3.57" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_3" x="-1.53" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_5" x="0.51" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_7" x="2.55" y="4.41" drill="0.8" shape="square"/>
+<pad name="RJ45_2" x="-2.55" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_4" x="-0.51" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_6" x="1.53" y="1.87" drill="0.8" shape="square"/>
+<pad name="RJ45_8" x="3.57" y="1.87" drill="0.8" shape="square"/>
+<hole x="-7.5" y="-0.43" drill="2.36"/>
+<hole x="7.5" y="-0.43" drill="2.36"/>
+<wire x1="-7.5" y1="6.43" x2="7.5" y2="6.43" width="0.127" layer="21"/>
+<wire x1="7.5" y1="6.43" x2="7.5" y2="-6.43" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-6.43" x2="-7.5" y2="-6.43" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-6.43" x2="-7.5" y2="6.43" width="0.127" layer="21"/>
+<text x="-5.207" y="3.81" size="1.27" layer="21">1</text>
+<text x="4.445" y="1.27" size="1.27" layer="21">8</text>
+<text x="-7.62" y="6.731" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -831,25 +832,6 @@ discharge (ESD).</description>
 <text x="-30.48" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 <text x="-30.48" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="PTR_AK700_2_5.0">
-<description>Šroubovací svorkovnice do DPS, zelená.
-
-Počet kontaktů = 2
-Rozteč kontaktů = 5mm
-Jmenovité napětí = 250V
-Jmenovitý proud = 24A
-Orientace vodiče = vertikální
-Možnost spojování = ano
-Výrobce PTR</description>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="GND" x="-10.16" y="2.54" length="middle"/>
-<pin name="INPUT" x="-10.16" y="-2.54" length="middle"/>
-<text x="-4.572" y="8.128" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="MCP2561">
 <description>High-Speed CAN Transceiver
 See http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf
@@ -876,6 +858,23 @@ discharge (ESD).</description>
 <pin name="STBY" x="17.78" y="7.62" length="middle" rot="R180"/>
 <text x="-12.7" y="13.462" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="WEBP88_RJ45_SINGLE">
+<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="RJ45_1" x="-17.78" y="7.62" length="middle"/>
+<pin name="RJ45_2" x="-17.78" y="2.54" length="middle"/>
+<pin name="RJ45_3" x="-17.78" y="-2.54" length="middle"/>
+<pin name="RJ45_4" x="-17.78" y="-7.62" length="middle"/>
+<pin name="RJ45_8" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="RJ45_7" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="RJ45_6" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="RJ45_5" x="17.78" y="7.62" length="middle" rot="R180"/>
+<text x="-12.446" y="10.668" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.446" y="-11.938" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -910,31 +909,6 @@ discharge (ESD).</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PTRAK700250">
-<description>Šroubovací svorkovnice do DPS, zelená.
-
-Počet kontaktů = 2
-Rozteč kontaktů = 5mm
-Jmenovité napětí = 250V
-Jmenovitý proud = 24A
-Orientace vodiče = vertikální
-Možnost spojování = ano
-Výrobce PTR</description>
-<gates>
-<gate name="G$1" symbol="PTR_AK700_2_5.0" x="0" y="0"/>
-</gates>
-<devices>
-<device name="GME" package="PTR_AK700_2_5.0">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="INPUT" pad="INPUT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MCP2561">
 <description>High-Speed CAN Transceiver
 See http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf
@@ -961,6 +935,29 @@ discharge (ESD).</description>
 <connect gate="G$1" pin="TXD" pad="TXD"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VSS" pad="VSS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WEBP88_S">
+<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
+<gates>
+<gate name="G$1" symbol="WEBP88_RJ45_SINGLE" x="-12.7" y="10.16"/>
+</gates>
+<devices>
+<device name="SINGLE" package="WEBP88_RJ45_SINGLE">
+<connects>
+<connect gate="G$1" pin="RJ45_1" pad="RJ45_1"/>
+<connect gate="G$1" pin="RJ45_2" pad="RJ45_2"/>
+<connect gate="G$1" pin="RJ45_3" pad="RJ45_3"/>
+<connect gate="G$1" pin="RJ45_4" pad="RJ45_4"/>
+<connect gate="G$1" pin="RJ45_5" pad="RJ45_5"/>
+<connect gate="G$1" pin="RJ45_6" pad="RJ45_6"/>
+<connect gate="G$1" pin="RJ45_7" pad="RJ45_7"/>
+<connect gate="G$1" pin="RJ45_8" pad="RJ45_8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8313,7 +8310,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="CHIP" library="microchip" deviceset="PIC18F2*80" device="-I/SP" technology="4"/>
 <part name="DEBUGGING" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="RJ45CONNECTOR" library="PoJD" deviceset="WEBP88_D" device="DOUBLE"/>
-<part name="SWITCHINPUT" library="PoJD" deviceset="PTRAK700250" device="GME"/>
 <part name="MCP2561" library="PoJD" deviceset="MCP2561" device="MCP"/>
 <part name="MCLR_J" library="jumper" deviceset="JP1Q" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/10" value="10000"/>
@@ -8336,6 +8332,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="050-025X075" value="0.1uF"/>
 <part name="XTAL" library="special" deviceset="XTAL/S" device="" value="16MHz"/>
+<part name="INPUTS" library="PoJD" deviceset="WEBP88_S" device="SINGLE"/>
 </parts>
 <sheets>
 <sheet>
@@ -8343,9 +8340,8 @@ Source: AVX .. aphvc.pdf</description>
 </plain>
 <instances>
 <instance part="CHIP" gate="G$1" x="-76.2" y="86.36"/>
-<instance part="DEBUGGING" gate="A" x="-45.72" y="50.8"/>
+<instance part="DEBUGGING" gate="A" x="-17.78" y="48.26"/>
 <instance part="RJ45CONNECTOR" gate="G$1" x="-55.88" y="124.46"/>
-<instance part="SWITCHINPUT" gate="G$1" x="-83.82" y="50.8"/>
 <instance part="MCP2561" gate="G$1" x="20.32" y="96.52"/>
 <instance part="MCLR_J" gate="A" x="-154.94" y="106.68"/>
 <instance part="R1" gate="G$1" x="-154.94" y="124.46" rot="R90"/>
@@ -8353,9 +8349,9 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND2" gate="1" x="-154.94" y="83.82"/>
 <instance part="P+2" gate="1" x="-154.94" y="134.62"/>
 <instance part="C1" gate="G$1" x="-154.94" y="93.98"/>
-<instance part="GND4" gate="1" x="-33.02" y="66.04" rot="R90"/>
-<instance part="P+3" gate="1" x="-30.48" y="78.74" rot="R270"/>
-<instance part="C2" gate="G$1" x="-43.18" y="73.66"/>
+<instance part="GND4" gate="1" x="-20.32" y="66.04" rot="R90"/>
+<instance part="P+3" gate="1" x="-17.78" y="78.74" rot="R270"/>
+<instance part="C2" gate="G$1" x="-30.48" y="73.66"/>
 <instance part="C7" gate="G$1" x="-111.76" y="106.68" rot="R90"/>
 <instance part="GND5" gate="1" x="-119.38" y="106.68" rot="R270"/>
 <instance part="CXT1" gate="G$1" x="-132.08" y="101.6" rot="R90"/>
@@ -8368,6 +8364,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND3" gate="1" x="-27.94" y="104.14" rot="R270"/>
 <instance part="C3" gate="G$1" x="-20.32" y="99.06"/>
 <instance part="XTAL" gate="G$1" x="-119.38" y="93.98" rot="R90"/>
+<instance part="INPUTS" gate="G$1" x="-88.9" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -8380,14 +8377,14 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="CHIP" gate="G$1" pin="VDD"/>
-<wire x1="-50.8" y1="83.82" x2="-45.72" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="83.82" x2="-45.72" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="83.82" x2="-33.02" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="83.82" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="-45.72" y1="78.74" x2="-43.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="78.74" x2="-30.48" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-43.18" y1="78.74" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="76.2" x2="-43.18" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-43.18" y="78.74"/>
+<wire x1="-30.48" y1="78.74" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="76.2" x2="-30.48" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-30.48" y="78.74"/>
 </segment>
 <segment>
 <pinref part="MCP2561" gate="G$1" pin="VDD"/>
@@ -8408,8 +8405,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="DEBUGGING" gate="A" pin="2"/>
-<wire x1="-48.26" y1="53.34" x2="-60.96" y2="53.34" width="0.1524" layer="91"/>
-<label x="-60.96" y="53.34" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
+<label x="-33.02" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ4515"/>
@@ -8442,13 +8439,13 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="-43.18" y1="66.04" x2="-35.56" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="68.58" x2="-43.18" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="66.04" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="68.58" x2="-30.48" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="CHIP" gate="G$1" pin="VSS@1"/>
-<wire x1="-50.8" y1="81.28" x2="-48.26" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="81.28" x2="-48.26" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="66.04" x2="-43.18" y2="66.04" width="0.1524" layer="91"/>
-<junction x="-43.18" y="66.04"/>
+<wire x1="-50.8" y1="81.28" x2="-35.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="81.28" x2="-35.56" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="66.04" x2="-30.48" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-30.48" y="66.04"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -8484,11 +8481,6 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="-20.32" y="104.14"/>
 </segment>
 <segment>
-<pinref part="SWITCHINPUT" gate="G$1" pin="GND"/>
-<wire x1="-93.98" y1="53.34" x2="-101.6" y2="53.34" width="0.1524" layer="91"/>
-<label x="-106.68" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CHIP" gate="G$1" pin="VSS"/>
 <wire x1="-101.6" y1="86.36" x2="-109.22" y2="86.36" width="0.1524" layer="91"/>
 <label x="-109.22" y="86.36" size="1.778" layer="95"/>
@@ -8505,8 +8497,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="DEBUGGING" gate="A" pin="3"/>
-<wire x1="-48.26" y1="50.8" x2="-60.96" y2="50.8" width="0.1524" layer="91"/>
-<label x="-60.96" y="50.8" size="1.778" layer="95"/>
+<wire x1="-20.32" y1="48.26" x2="-33.02" y2="48.26" width="0.1524" layer="91"/>
+<label x="-33.02" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ4518"/>
@@ -8524,6 +8516,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-60.96" y1="129.54" x2="-58.42" y2="129.54" width="0.1524" layer="91"/>
 <label x="-63.5" y="132.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="INPUTS" gate="G$1" pin="RJ45_1"/>
+<wire x1="-106.68" y1="55.88" x2="-124.46" y2="55.88" width="0.1524" layer="91"/>
+<label x="-124.46" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -8539,8 +8536,8 @@ Source: AVX .. aphvc.pdf</description>
 <net name="MCLR" class="0">
 <segment>
 <pinref part="DEBUGGING" gate="A" pin="1"/>
-<wire x1="-60.96" y1="55.88" x2="-48.26" y2="55.88" width="0.1524" layer="91"/>
-<label x="-55.88" y="58.42" size="1.778" layer="95" rot="R180"/>
+<wire x1="-33.02" y1="53.34" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
+<label x="-27.94" y="55.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -8593,18 +8590,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-114.3" y1="76.2" x2="-116.84" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="INPUT" class="0">
-<segment>
-<pinref part="CHIP" gate="G$1" pin="INT0/AN10/RB0"/>
-<wire x1="-50.8" y1="86.36" x2="-40.64" y2="86.36" width="0.1524" layer="91"/>
-<label x="-48.26" y="86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SWITCHINPUT" gate="G$1" pin="INPUT"/>
-<wire x1="-101.6" y1="48.26" x2="-93.98" y2="48.26" width="0.1524" layer="91"/>
-<label x="-106.68" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="CANH" class="0">
 <segment>
 <pinref part="MCP2561" gate="G$1" pin="CANH"/>
@@ -8639,18 +8624,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-106.68" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PGC" class="0">
-<segment>
-<pinref part="CHIP" gate="G$1" pin="KBI2/PGC/RB6"/>
-<wire x1="-50.8" y1="101.6" x2="-40.64" y2="101.6" width="0.1524" layer="91"/>
-<label x="-45.72" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DEBUGGING" gate="A" pin="5"/>
-<wire x1="-48.26" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
-<label x="-55.88" y="48.26" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
 <net name="TXD" class="0">
 <segment>
 <pinref part="MCP2561" gate="G$1" pin="TXD"/>
@@ -8658,9 +8631,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-7.62" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CHIP" gate="G$1" pin="INT2/CANTX/RB2"/>
-<wire x1="-50.8" y1="91.44" x2="-40.64" y2="91.44" width="0.1524" layer="91"/>
-<label x="-45.72" y="91.44" size="1.778" layer="95"/>
+<pinref part="CHIP" gate="G$1" pin="RC6/TX/CK"/>
+<wire x1="-50.8" y1="76.2" x2="-40.64" y2="76.2" width="0.1524" layer="91"/>
+<label x="-45.72" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -8670,21 +8643,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-7.62" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="CHIP" gate="G$1" pin="CANRX/RB3"/>
-<wire x1="-50.8" y1="93.98" x2="-40.64" y2="93.98" width="0.1524" layer="91"/>
-<label x="-45.72" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PGD" class="0">
-<segment>
-<pinref part="CHIP" gate="G$1" pin="KBI3/PGD/RB7"/>
-<wire x1="-50.8" y1="104.14" x2="-40.64" y2="104.14" width="0.1524" layer="91"/>
-<label x="-45.72" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DEBUGGING" gate="A" pin="4"/>
-<wire x1="-48.26" y1="48.26" x2="-60.96" y2="48.26" width="0.1524" layer="91"/>
-<label x="-55.88" y="50.8" size="1.778" layer="95" rot="R180"/>
+<pinref part="CHIP" gate="G$1" pin="RC7/RX/DT"/>
+<wire x1="-50.8" y1="78.74" x2="-40.64" y2="78.74" width="0.1524" layer="91"/>
+<label x="-45.72" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OSC2" class="0">
@@ -8712,6 +8673,107 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-114.3" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="INPUT4" class="0">
+<segment>
+<pinref part="CHIP" gate="G$1" pin="CANRX/RB3"/>
+<wire x1="-50.8" y1="93.98" x2="-40.64" y2="93.98" width="0.1524" layer="91"/>
+<label x="-48.26" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUTS" gate="G$1" pin="RJ45_5"/>
+<wire x1="-71.12" y1="55.88" x2="-55.88" y2="55.88" width="0.1524" layer="91"/>
+<label x="-63.5" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INPUT3" class="0">
+<segment>
+<pinref part="CHIP" gate="G$1" pin="INT2/CANTX/RB2"/>
+<wire x1="-50.8" y1="91.44" x2="-40.64" y2="91.44" width="0.1524" layer="91"/>
+<label x="-48.26" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUTS" gate="G$1" pin="RJ45_4"/>
+<wire x1="-106.68" y1="40.64" x2="-124.46" y2="40.64" width="0.1524" layer="91"/>
+<label x="-124.46" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INPUT2" class="0">
+<segment>
+<pinref part="CHIP" gate="G$1" pin="INT1/AN8/RB1"/>
+<wire x1="-50.8" y1="88.9" x2="-40.64" y2="88.9" width="0.1524" layer="91"/>
+<label x="-48.26" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUTS" gate="G$1" pin="RJ45_3"/>
+<wire x1="-106.68" y1="45.72" x2="-124.46" y2="45.72" width="0.1524" layer="91"/>
+<label x="-124.46" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INPUT1" class="0">
+<segment>
+<pinref part="CHIP" gate="G$1" pin="INT0/AN10/RB0"/>
+<wire x1="-50.8" y1="86.36" x2="-40.64" y2="86.36" width="0.1524" layer="91"/>
+<label x="-48.26" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUTS" gate="G$1" pin="RJ45_2"/>
+<wire x1="-106.68" y1="50.8" x2="-124.46" y2="50.8" width="0.1524" layer="91"/>
+<label x="-124.46" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INPUT5" class="0">
+<segment>
+<pinref part="CHIP" gate="G$1" pin="KBI0/AN9/RB4"/>
+<wire x1="-50.8" y1="96.52" x2="-40.64" y2="96.52" width="0.1524" layer="91"/>
+<label x="-48.26" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUTS" gate="G$1" pin="RJ45_6"/>
+<wire x1="-71.12" y1="50.8" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
+<label x="-63.5" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="INPUT6" class="0">
+<segment>
+<pinref part="CHIP" gate="G$1" pin="KBI1/PGM/RB5"/>
+<wire x1="-50.8" y1="99.06" x2="-40.64" y2="99.06" width="0.1524" layer="91"/>
+<label x="-48.26" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUTS" gate="G$1" pin="RJ45_7"/>
+<wire x1="-71.12" y1="45.72" x2="-55.88" y2="45.72" width="0.1524" layer="91"/>
+<label x="-63.5" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PGC/INPUT7" class="0">
+<segment>
+<pinref part="CHIP" gate="G$1" pin="KBI2/PGC/RB6"/>
+<wire x1="-50.8" y1="101.6" x2="-40.64" y2="101.6" width="0.1524" layer="91"/>
+<label x="-48.26" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUTS" gate="G$1" pin="RJ45_8"/>
+<wire x1="-71.12" y1="40.64" x2="-55.88" y2="40.64" width="0.1524" layer="91"/>
+<label x="-63.5" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DEBUGGING" gate="A" pin="5"/>
+<wire x1="-20.32" y1="43.18" x2="-33.02" y2="43.18" width="0.1524" layer="91"/>
+<label x="-27.94" y="45.72" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="PGD/INPUT8" class="0">
+<segment>
+<pinref part="CHIP" gate="G$1" pin="KBI3/PGD/RB7"/>
+<wire x1="-50.8" y1="104.14" x2="-40.64" y2="104.14" width="0.1524" layer="91"/>
+<label x="-48.26" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DEBUGGING" gate="A" pin="4"/>
+<wire x1="-20.32" y1="45.72" x2="-33.02" y2="45.72" width="0.1524" layer="91"/>
+<label x="-27.94" y="48.26" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -8719,7 +8781,7 @@ Source: AVX .. aphvc.pdf</description>
 <approved hash="104,1,-101.6,86.36,CHIP,VSS,GND,,,"/>
 <approved hash="104,1,-50.8,81.28,CHIP,VSS,GND,,,"/>
 <approved hash="104,1,-50.8,83.82,CHIP,VDD,+5V,,,"/>
-<approved hash="113,1,-44.1974,52.2012,DEBUGGING,,,,,"/>
+<approved hash="113,1,-16.2574,49.6612,DEBUGGING,,,,,"/>
 <approved hash="113,1,-156.341,106.68,MCLR_J,,,,,"/>
 <approved hash="113,1,-122.693,76.5217,STATUSLED,,,,,"/>
 </errors>
