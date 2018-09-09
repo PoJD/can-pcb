@@ -8484,11 +8484,6 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="-20.32" y="104.14"/>
 </segment>
 <segment>
-<pinref part="MCP2561" gate="G$1" pin="STBY"/>
-<wire x1="38.1" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
-<label x="45.72" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SWITCHINPUT" gate="G$1" pin="GND"/>
 <wire x1="-93.98" y1="53.34" x2="-101.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="-106.68" y="50.8" size="1.778" layer="95"/>
@@ -8703,6 +8698,18 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-119.38" y1="86.36" x2="-127" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="88.9" x2="-119.38" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-119.38" y="86.36"/>
+</segment>
+</net>
+<net name="STBY" class="0">
+<segment>
+<pinref part="MCP2561" gate="G$1" pin="STBY"/>
+<wire x1="38.1" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
+<label x="45.72" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CHIP" gate="G$1" pin="RC3/SCK/SCL"/>
+<wire x1="-101.6" y1="71.12" x2="-114.3" y2="71.12" width="0.1524" layer="91"/>
+<label x="-114.3" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
