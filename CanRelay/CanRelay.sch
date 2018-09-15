@@ -7278,9 +7278,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="OUTPUTS" library="pinhead" deviceset="PINHD-2X10" device=""/>
 <part name="RJ45BUSEND" library="PoJD" deviceset="WEBP88_S" device="SINGLE"/>
-<part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="PWR" library="PoJD" deviceset="DC-JACK-GK0.65" device="S"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
@@ -7321,9 +7318,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND1" gate="1" x="63.5" y="63.5" rot="R90"/>
 <instance part="OUTPUTS" gate="A" x="-93.98" y="45.72"/>
 <instance part="RJ45BUSEND" gate="G$1" x="-73.66" y="124.46"/>
-<instance part="P+4" gate="1" x="-43.18" y="116.84" rot="R270"/>
-<instance part="GND7" gate="1" x="-40.64" y="121.92" rot="R90"/>
-<instance part="GND8" gate="1" x="-106.68" y="121.92" rot="R270"/>
 <instance part="PWR" gate="G$1" x="-27.94" y="127"/>
 <instance part="GND9" gate="1" x="0" y="124.46" rot="R90"/>
 <instance part="P+5" gate="1" x="0" y="129.54" rot="R270"/>
@@ -7370,11 +7364,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-58.42" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_8"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="-55.88" y1="116.84" x2="-45.72" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="PWR" gate="G$1" pin="VCC"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="-20.32" y1="129.54" x2="-2.54" y2="129.54" width="0.1524" layer="91"/>
@@ -7383,6 +7372,18 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="PWR1" gate="G$1" pin="VCC"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="20.32" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_1"/>
+<wire x1="-91.44" y1="132.08" x2="-106.68" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_3"/>
+<wire x1="-91.44" y1="121.92" x2="-106.68" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_5"/>
+<wire x1="-55.88" y1="132.08" x2="-40.64" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7451,16 +7452,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="55.88" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_7"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="-55.88" y1="121.92" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_3"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="-91.44" y1="121.92" x2="-104.14" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="PWR" gate="G$1" pin="GND1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="-20.32" y1="124.46" x2="-10.16" y2="124.46" width="0.1524" layer="91"/>
@@ -7484,6 +7475,18 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="25.4" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 <junction x="25.4" y="124.46"/>
+</segment>
+<segment>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_2"/>
+<wire x1="-91.44" y1="127" x2="-106.68" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_4"/>
+<wire x1="-91.44" y1="116.84" x2="-106.68" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_6"/>
+<wire x1="-55.88" y1="127" x2="-40.64" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7554,14 +7557,13 @@ Source: AVX .. aphvc.pdf</description>
 <label x="43.18" y="78.74" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_1"/>
-<wire x1="-91.44" y1="132.08" x2="-106.68" y2="132.08" width="0.1524" layer="91"/>
-<label x="-106.68" y="132.08" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="USBTIN" gate="A" pin="1"/>
 <wire x1="5.08" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
 <label x="-7.62" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_8"/>
+<wire x1="-55.88" y1="116.84" x2="-40.64" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -7576,14 +7578,13 @@ Source: AVX .. aphvc.pdf</description>
 <label x="43.18" y="40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_2"/>
-<wire x1="-91.44" y1="127" x2="-106.68" y2="127" width="0.1524" layer="91"/>
-<label x="-106.68" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="USBTIN" gate="A" pin="2"/>
 <wire x1="5.08" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
 <label x="-7.62" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_7"/>
+<wire x1="-55.88" y1="121.92" x2="-40.64" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXD" class="0">
