@@ -1160,7 +1160,7 @@ discharge (ESD).</description>
 <wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.127" layer="21"/>
 <wire x1="2.5" y1="3.81" x2="-2.5" y2="3.81" width="0.127" layer="21"/>
 <text x="-3.1" y="4.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.69" y="4.81" size="0.5" layer="21">TXD</text>
+<text x="-5.0456" y="4.8354" size="0.8128" layer="21">TXD</text>
 </package>
 <package name="WEBP88_RJ45_SINGLE">
 <description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
@@ -1210,31 +1210,23 @@ discharge (ESD).</description>
 <text x="-0.508" y="-2.794" size="0.8128" layer="21">GND</text>
 <text x="4.8006" y="-1.27" size="0.8128" layer="21" rot="R90">VCC</text>
 </package>
-<package name="DC-JACK-GK2.1">
-<description>Napájecí souosý konektor do DPS 2,1mm vidlice. Imax=3A. https://www.gme.cz/napajeci-souosy-konektor-pc-gk2-1</description>
-<pad name="GND1" x="0" y="0" drill="0.6" diameter="2.2" shape="long" rot="R90"/>
-<pad name="GND2" x="4" y="-4.5" drill="0.6" diameter="2.2" shape="long"/>
-<pad name="VCC" x="6.75" y="0" drill="0.6" diameter="2.2" shape="long" rot="R90"/>
-<wire x1="-6.75" y1="4.5" x2="6.75" y2="4.5" width="0.127" layer="21"/>
-<wire x1="6.75" y1="4.5" x2="6.75" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="6.75" y1="-4.5" x2="-6.75" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-6.75" y1="-4.5" x2="-6.75" y2="4.5" width="0.127" layer="21"/>
-<wire x1="-0.75" y1="1.25" x2="0.75" y2="1.25" width="0" layer="46"/>
-<wire x1="0.75" y1="1.25" x2="0.75" y2="-1.25" width="0" layer="46"/>
-<wire x1="0.75" y1="-1.25" x2="-0.75" y2="-1.25" width="0" layer="46"/>
-<wire x1="-0.75" y1="1.25" x2="-0.75" y2="-1.25" width="0" layer="46"/>
-<wire x1="2.75" y1="-3.75" x2="5.25" y2="-3.75" width="0" layer="46"/>
-<wire x1="5.25" y1="-3.75" x2="5.25" y2="-5.25" width="0" layer="46"/>
-<wire x1="5.25" y1="-5.25" x2="2.75" y2="-5.25" width="0" layer="46"/>
-<wire x1="2.75" y1="-3.75" x2="2.75" y2="-5.25" width="0" layer="46"/>
-<wire x1="6" y1="1.25" x2="7.5" y2="1.25" width="0" layer="46"/>
-<wire x1="7.5" y1="1.25" x2="7.5" y2="-1.25" width="0" layer="46"/>
-<wire x1="7.5" y1="-1.25" x2="6" y2="-1.25" width="0" layer="46"/>
-<wire x1="6" y1="-1.25" x2="6" y2="1.25" width="0" layer="46"/>
-<text x="-6.8" y="4.7" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.35" y="-1.27" size="0.8128" layer="21" rot="R90">GND</text>
-<text x="-0.846" y="-4.2" size="0.8128" layer="21">GND</text>
-<text x="5.4" y="-1.27" size="0.8128" layer="21" rot="R90">VCC</text>
+<package name="DC-JACK-SCD-016A-2.5">
+<description>Napájecí souosý konektor do DPS 2,5mm vidlice. 
+https://www.gme.cz/napajeci-souosy-konektor-scd-016a.</description>
+<pad name="GND1" x="2.85" y="-0.5" drill="1" diameter="1.8" shape="square" rot="R90"/>
+<pad name="VCC" x="2.85" y="2.8" drill="1" diameter="1.8" shape="square"/>
+<pad name="GND2" x="3.25" y="-4.5" drill="1.3" diameter="2.3" shape="square" rot="R180"/>
+<wire x1="-5.75" y1="5.5" x2="5.75" y2="5.5" width="0.127" layer="21"/>
+<wire x1="5.75" y1="5.5" x2="5.75" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="5.75" y1="-5.5" x2="-5.75" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="-5.5" x2="-5.75" y2="5.5" width="0.127" layer="21"/>
+<text x="-6.8" y="5.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="4.9" y="-1.57" size="0.8128" layer="21" rot="R90">GND</text>
+<text x="5.554" y="-5.6" size="0.8128" layer="21" rot="R90">GND</text>
+<text x="4.9" y="1.73" size="0.8128" layer="21" rot="R90">VCC</text>
+<hole x="-4.25" y="-1" drill="1.8"/>
+<rectangle x1="-4.25" y1="3.85" x2="1.65" y2="4.95" layer="45"/>
+<rectangle x1="-4.35" y1="-4.95" x2="1.55" y2="-3.85" layer="45"/>
 </package>
 </packages>
 <symbols>
@@ -1304,9 +1296,9 @@ discharge (ESD).</description>
 <vertex x="3.048" y="-1.27"/>
 </polygon>
 </symbol>
-<symbol name="DC-JACK-GK2.1">
-<description>Napájecí souosý konektor do DPS 2,1mm vidlice. Imax=3A.
-https://www.gme.cz/napajeci-souosy-konektor-pc-gk2-1</description>
+<symbol name="DC-JACK-SCD-016A-2.5">
+<description>Napájecí souosý konektor do DPS 2,5mm vidlice. 
+https://www.gme.cz/napajeci-souosy-konektor-scd-016a.</description>
 <wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -1403,13 +1395,14 @@ discharge (ESD).</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DC-JACK-GK2.1">
-<description>Napájecí souosý konektor do DPS 2,1mm vidlice. Imax=3A. https://www.gme.cz/napajeci-souosy-konektor-pc-gk2-1</description>
+<deviceset name="DC-JACK-SCD-06A-2.5">
+<description>Napájecí souosý konektor do DPS 2,5mm vidlice. 
+https://www.gme.cz/napajeci-souosy-konektor-scd-016a.</description>
 <gates>
-<gate name="G$1" symbol="DC-JACK-GK2.1" x="-2.54" y="0"/>
+<gate name="G$1" symbol="DC-JACK-SCD-016A-2.5" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="S" package="DC-JACK-GK2.1">
+<device name="S" package="DC-JACK-SCD-016A-2.5">
 <connects>
 <connect gate="G$1" pin="GND1" pad="GND1"/>
 <connect gate="G$1" pin="GND2" pad="GND2"/>
@@ -7292,10 +7285,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="USBTIN" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="PWR1" library="PoJD" deviceset="DC-JACK-GK2.1" device="S"/>
-<part name="PWR2" library="PoJD" deviceset="DC-JACK-GK2.1" device="S"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="PWR1" library="PoJD" deviceset="DC-JACK-SCD-06A-2.5" device="S"/>
 </parts>
 <sheets>
 <sheet>
@@ -7336,10 +7328,9 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND9" gate="1" x="0" y="124.46" rot="R90"/>
 <instance part="P+5" gate="1" x="0" y="129.54" rot="R270"/>
 <instance part="USBTIN" gate="A" x="7.62" y="50.8"/>
+<instance part="P+6" gate="1" x="33.02" y="129.54" rot="R270"/>
+<instance part="GND10" gate="1" x="33.02" y="124.46" rot="R90"/>
 <instance part="PWR1" gate="G$1" x="12.7" y="127"/>
-<instance part="PWR2" gate="G$1" x="53.34" y="127" rot="MR0"/>
-<instance part="P+6" gate="1" x="33.02" y="134.62"/>
-<instance part="GND10" gate="1" x="33.02" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -7390,11 +7381,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="PWR1" gate="G$1" pin="VCC"/>
-<pinref part="PWR2" gate="G$1" pin="VCC"/>
-<wire x1="20.32" y1="129.54" x2="33.02" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="129.54" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="129.54" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
+<wire x1="20.32" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7488,17 +7476,14 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-7.62" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PWR2" gate="G$1" pin="GND1"/>
-<pinref part="PWR1" gate="G$1" pin="GND1"/>
-<wire x1="45.72" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="PWR1" gate="G$1" pin="GND2"/>
-<pinref part="PWR2" gate="G$1" pin="GND2"/>
-<wire x1="33.02" y1="124.46" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="127" x2="45.72" y2="127" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="127" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="124.46" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="127" x2="25.4" y2="127" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="127" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="PWR1" gate="G$1" pin="GND1"/>
+<wire x1="20.32" y1="124.46" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="25.4" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
+<junction x="25.4" y="124.46"/>
 </segment>
 </net>
 <net name="N$2" class="0">
