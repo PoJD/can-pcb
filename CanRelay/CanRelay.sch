@@ -482,6 +482,12 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="VCC">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+5V" prefix="P+">
@@ -501,6 +507,19 @@ Source: http://www.microchip.com .. 39637a.pdf</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1228,6 +1247,24 @@ https://www.gme.cz/napajeci-souosy-konektor-scd-016a.</description>
 <rectangle x1="-4.25" y1="3.85" x2="1.65" y2="4.95" layer="45"/>
 <rectangle x1="-4.35" y1="-4.95" x2="1.55" y2="-3.85" layer="45"/>
 </package>
+<package name="FUSE-PTF78">
+<description>Pojistkové pouzdro do DPS pro pojistky 5x20mm.
+Otevírání pomocí šroubováku. Nastojato.
+Rozteč vývodů: 22,6mm 
+Jmenovité napětí: 250V AC
+Jmenovitý proud: 6,3A
+
+Součástí dodávky je kryt.
+
+https://www.gme.cz/pojistkove-pouzdro-do-dps-ks-ptf78-bs232</description>
+<pad name="P1" x="11.3" y="0" drill="1.2" shape="long" rot="R90"/>
+<pad name="P2" x="-11.3" y="0" drill="1.2" shape="long" rot="R90"/>
+<wire x1="-12.2" y1="4.7" x2="12.2" y2="4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="4.7" x2="12.2" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="12.2" y1="-4.7" x2="-12.2" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="-12.2" y1="-4.7" x2="-12.2" y2="4.7" width="0.127" layer="21"/>
+<text x="-12.4" y="4.9" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP2561">
@@ -1319,6 +1356,26 @@ https://www.gme.cz/napajeci-souosy-konektor-scd-016a.</description>
 <vertex x="3.048" y="-1.27"/>
 </polygon>
 </symbol>
+<symbol name="FUSE-PTF78">
+<description>Pojistkové pouzdro do DPS pro pojistky 5x20mm.
+Otevírání pomocí šroubováku. Nastojato.
+Rozteč vývodů: 22,6mm 
+Jmenovité napětí: 250V AC
+Jmenovitý proud: 6,3A
+
+Součástí dodávky je kryt.
+
+https://www.gme.cz/pojistkove-pouzdro-do-dps-ks-ptf78-bs232</description>
+<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MCP2561">
@@ -1407,6 +1464,31 @@ https://www.gme.cz/napajeci-souosy-konektor-scd-016a.</description>
 <connect gate="G$1" pin="GND1" pad="GND1"/>
 <connect gate="G$1" pin="GND2" pad="GND2"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE-PTF78">
+<description>Pojistkové pouzdro do DPS pro pojistky 5x20mm.
+Otevírání pomocí šroubováku. Nastojato.
+Rozteč vývodů: 22,6mm 
+Jmenovité napětí: 250V AC
+Jmenovitý proud: 6,3A
+
+Součástí dodávky je kryt.
+
+https://www.gme.cz/pojistkove-pouzdro-do-dps-ks-ptf78-bs232</description>
+<gates>
+<gate name="G$1" symbol="FUSE-PTF78" x="0" y="0"/>
+</gates>
+<devices>
+<device name="78" package="FUSE-PTF78">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7280,11 +7362,12 @@ Source: AVX .. aphvc.pdf</description>
 <part name="RJ45BUSEND" library="PoJD" deviceset="WEBP88_S" device="SINGLE"/>
 <part name="PWR" library="PoJD" deviceset="DC-JACK-GK0.65" device="S"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="USBTIN" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="PWR1" library="PoJD" deviceset="DC-JACK-SCD-06A-2.5" device="S"/>
+<part name="FUSE" library="PoJD" deviceset="FUSE-PTF78" device="78"/>
+<part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="P+5" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7319,12 +7402,13 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="OUTPUTS" gate="A" x="-93.98" y="45.72"/>
 <instance part="RJ45BUSEND" gate="G$1" x="-73.66" y="124.46"/>
 <instance part="PWR" gate="G$1" x="-27.94" y="127"/>
-<instance part="GND9" gate="1" x="0" y="124.46" rot="R90"/>
-<instance part="P+5" gate="1" x="0" y="129.54" rot="R270"/>
+<instance part="GND9" gate="1" x="-2.54" y="124.46" rot="R90"/>
 <instance part="USBTIN" gate="A" x="7.62" y="50.8"/>
-<instance part="P+6" gate="1" x="33.02" y="129.54" rot="R270"/>
-<instance part="GND10" gate="1" x="33.02" y="124.46" rot="R90"/>
-<instance part="PWR1" gate="G$1" x="12.7" y="127"/>
+<instance part="GND10" gate="1" x="63.5" y="124.46" rot="R90"/>
+<instance part="PWR1" gate="G$1" x="38.1" y="127"/>
+<instance part="FUSE" gate="G$1" x="10.16" y="139.7"/>
+<instance part="P+4" gate="VCC" x="0" y="129.54" rot="R270"/>
+<instance part="P+5" gate="VCC" x="63.5" y="129.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7364,16 +7448,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-58.42" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="VCC"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-<wire x1="-20.32" y1="129.54" x2="-2.54" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="PWR1" gate="G$1" pin="VCC"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="20.32" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_1"/>
 <wire x1="-91.44" y1="132.08" x2="-106.68" y2="132.08" width="0.1524" layer="91"/>
 <label x="-106.68" y="132.08" size="1.778" layer="95"/>
@@ -7387,6 +7461,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_5"/>
 <wire x1="-55.88" y1="132.08" x2="-40.64" y2="132.08" width="0.1524" layer="91"/>
 <label x="-45.72" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FUSE" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="139.7" x2="-2.54" y2="139.7" width="0.1524" layer="91"/>
+<label x="-2.54" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7459,7 +7538,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="-20.32" y1="124.46" x2="-10.16" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="PWR" gate="G$1" pin="GND2"/>
-<wire x1="-10.16" y1="124.46" x2="-2.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="124.46" x2="-5.08" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="127" x2="-10.16" y2="127" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="127" x2="-10.16" y2="124.46" width="0.1524" layer="91"/>
 <junction x="-10.16" y="124.46"/>
@@ -7471,13 +7550,13 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="PWR1" gate="G$1" pin="GND2"/>
-<wire x1="20.32" y1="127" x2="25.4" y2="127" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="127" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="127" x2="50.8" y2="127" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="127" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="PWR1" gate="G$1" pin="GND1"/>
-<wire x1="20.32" y1="124.46" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="25.4" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
-<junction x="25.4" y="124.46"/>
+<wire x1="50.8" y1="124.46" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
+<junction x="50.8" y="124.46"/>
 </segment>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_2"/>
@@ -7887,6 +7966,23 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="OUTPUTS" gate="A" pin="1"/>
 <wire x1="-96.52" y1="55.88" x2="-111.76" y2="55.88" width="0.1524" layer="91"/>
 <label x="-111.76" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="PWR" gate="G$1" pin="VCC"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+<wire x1="-20.32" y1="129.54" x2="-2.54" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PWR1" gate="G$1" pin="VCC"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="45.72" y1="129.54" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="FUSE" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="139.7" x2="25.4" y2="139.7" width="0.1524" layer="91"/>
+<label x="15.24" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
