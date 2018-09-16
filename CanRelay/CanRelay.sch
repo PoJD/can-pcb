@@ -7376,14 +7376,17 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_1"/>
 <wire x1="-91.44" y1="132.08" x2="-106.68" y2="132.08" width="0.1524" layer="91"/>
+<label x="-106.68" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_3"/>
 <wire x1="-91.44" y1="121.92" x2="-106.68" y2="121.92" width="0.1524" layer="91"/>
+<label x="-106.68" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_5"/>
 <wire x1="-55.88" y1="132.08" x2="-40.64" y2="132.08" width="0.1524" layer="91"/>
+<label x="-45.72" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7479,14 +7482,17 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_2"/>
 <wire x1="-91.44" y1="127" x2="-106.68" y2="127" width="0.1524" layer="91"/>
+<label x="-106.68" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_4"/>
 <wire x1="-91.44" y1="116.84" x2="-106.68" y2="116.84" width="0.1524" layer="91"/>
+<label x="-106.68" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_6"/>
 <wire x1="-55.88" y1="127" x2="-40.64" y2="127" width="0.1524" layer="91"/>
+<label x="-45.72" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7564,6 +7570,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_8"/>
 <wire x1="-55.88" y1="116.84" x2="-40.64" y2="116.84" width="0.1524" layer="91"/>
+<label x="-45.72" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -7585,6 +7592,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="RJ45BUSEND" gate="G$1" pin="RJ45_7"/>
 <wire x1="-55.88" y1="121.92" x2="-40.64" y2="121.92" width="0.1524" layer="91"/>
+<label x="-45.72" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD" class="0">
@@ -7888,10 +7896,10 @@ Source: AVX .. aphvc.pdf</description>
 <approved hash="104,1,-101.6,86.36,CHIP,VSS,GND,,,"/>
 <approved hash="104,1,-50.8,81.28,CHIP,VSS,GND,,,"/>
 <approved hash="104,1,-50.8,83.82,CHIP,VDD,+5V,,,"/>
-<approved hash="113,1,-44.2911,52.2012,DEBUGGING,,,,,"/>
+<approved hash="113,1,-44.1974,52.2012,DEBUGGING,,,,,"/>
 <approved hash="113,1,-163.961,106.68,MCLR_J,,,,,"/>
 <approved hash="113,1,-92.7523,45.8512,OUTPUTS,,,,,"/>
-<approved hash="113,1,5.93377,52.2012,USBTIN,,,,,"/>
+<approved hash="113,1,5.98732,52.2012,USBTIN,,,,,"/>
 </errors>
 </schematic>
 </drawing>
