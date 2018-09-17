@@ -1244,8 +1244,14 @@ https://www.gme.cz/napajeci-souosy-konektor-scd-016a.</description>
 <text x="5.554" y="-5.6" size="0.8128" layer="21" rot="R90">GND</text>
 <text x="4.9" y="1.73" size="0.8128" layer="21" rot="R90">VCC</text>
 <hole x="-4.25" y="-1" drill="1.8"/>
-<rectangle x1="-4.25" y1="3.85" x2="1.65" y2="4.95" layer="45"/>
-<rectangle x1="-4.35" y1="-4.95" x2="1.55" y2="-3.85" layer="45"/>
+<wire x1="-4.25" y1="4.95" x2="1.65" y2="4.95" width="0.127" layer="20"/>
+<wire x1="1.65" y1="4.95" x2="1.65" y2="3.85" width="0.127" layer="20"/>
+<wire x1="1.65" y1="3.85" x2="-4.25" y2="3.85" width="0.127" layer="20"/>
+<wire x1="-4.25" y1="3.85" x2="-4.25" y2="4.95" width="0.127" layer="20"/>
+<wire x1="-4.25" y1="-3.85" x2="1.65" y2="-3.85" width="0.127" layer="20"/>
+<wire x1="1.65" y1="-3.85" x2="1.65" y2="-4.95" width="0.127" layer="20"/>
+<wire x1="1.65" y1="-4.95" x2="-4.25" y2="-4.95" width="0.127" layer="20"/>
+<wire x1="-4.25" y1="-4.95" x2="-4.25" y2="-3.85" width="0.127" layer="20"/>
 </package>
 <package name="FUSE-PTF78">
 <description>Pojistkové pouzdro do DPS pro pojistky 5x20mm.
