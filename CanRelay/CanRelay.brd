@@ -64,8 +64,8 @@
 <text x="45.466" y="8.636" size="2" layer="21">CanRelay 1.1
 By Lubos Housa
 https://github.com/PoJD/can-pcb</text>
-<hole x="3.302" y="37.143" drill="3"/>
-<hole x="88.646" y="31.682" drill="3"/>
+<hole x="3.302" y="37.143" drill="2"/>
+<hole x="88.646" y="31.682" drill="2"/>
 <text x="23.114" y="61.087" size="1.778" layer="21">CANH</text>
 <text x="23.114" y="58.42" size="1.778" layer="21">CANL</text>
 <text x="23.241" y="55.753" size="1.778" layer="21">GND</text>

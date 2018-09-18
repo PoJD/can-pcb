@@ -781,25 +781,23 @@ discharge (ESD).</description>
 <text x="-3.1" y="4.8" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.0456" y="4.8354" size="0.8128" layer="21">TXD</text>
 </package>
-<package name="WEBP88_RJ45_SINGLE">
-<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
-<pad name="RJ45_1" x="-3.57" y="4.41" drill="0.8" shape="square"/>
-<pad name="RJ45_3" x="-1.53" y="4.41" drill="0.8" shape="square"/>
-<pad name="RJ45_5" x="0.51" y="4.41" drill="0.8" shape="square"/>
-<pad name="RJ45_7" x="2.55" y="4.41" drill="0.8" shape="square"/>
-<pad name="RJ45_2" x="-2.55" y="1.87" drill="0.8" shape="square"/>
-<pad name="RJ45_4" x="-0.51" y="1.87" drill="0.8" shape="square"/>
-<pad name="RJ45_6" x="1.53" y="1.87" drill="0.8" shape="square"/>
-<pad name="RJ45_8" x="3.57" y="1.87" drill="0.8" shape="square"/>
-<hole x="-7.5" y="-0.43" drill="2.36"/>
-<hole x="7.5" y="-0.43" drill="2.36"/>
-<wire x1="-7.5" y1="6.43" x2="7.5" y2="6.43" width="0.127" layer="21"/>
-<wire x1="7.5" y1="6.43" x2="7.5" y2="-6.43" width="0.127" layer="21"/>
-<wire x1="7.5" y1="-6.43" x2="-7.5" y2="-6.43" width="0.127" layer="21"/>
-<wire x1="-7.5" y1="-6.43" x2="-7.5" y2="6.43" width="0.127" layer="21"/>
-<text x="-5.207" y="3.81" size="1.27" layer="21">1</text>
-<text x="4.445" y="1.27" size="1.27" layer="21">8</text>
-<text x="-7.62" y="6.731" size="1.27" layer="25">&gt;NAME</text>
+<package name="PTR_AK700_2_5.0">
+<description>Šroubovací svorkovnice do DPS, zelená.
+
+Počet kontaktů = 2
+Rozteč kontaktů = 5mm
+Jmenovité napětí = 250V
+Jmenovitý proud = 24A
+Orientace vodiče = vertikální
+Možnost spojování = ano
+Výrobce PTR</description>
+<wire x1="-5" y1="11.1" x2="5" y2="11.1" width="0.127" layer="21"/>
+<wire x1="5" y1="11.1" x2="5" y2="-11.1" width="0.127" layer="21"/>
+<wire x1="-5" y1="11.1" x2="-5" y2="-11.1" width="0.127" layer="21"/>
+<wire x1="-5" y1="-11.1" x2="5" y2="-11.1" width="0.127" layer="21"/>
+<pad name="IN1" x="-2.5" y="10" drill="1.3" diameter="2" shape="square"/>
+<pad name="IN2" x="2.5" y="10" drill="1.3" diameter="2" shape="square"/>
+<text x="-4.6" y="11.3" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -859,22 +857,24 @@ discharge (ESD).</description>
 <text x="-12.7" y="13.462" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="WEBP88_RJ45_SINGLE">
-<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
-<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<pin name="RJ45_1" x="-17.78" y="7.62" length="middle"/>
-<pin name="RJ45_2" x="-17.78" y="2.54" length="middle"/>
-<pin name="RJ45_3" x="-17.78" y="-2.54" length="middle"/>
-<pin name="RJ45_4" x="-17.78" y="-7.62" length="middle"/>
-<pin name="RJ45_8" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="RJ45_7" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="RJ45_6" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="RJ45_5" x="17.78" y="7.62" length="middle" rot="R180"/>
-<text x="-12.446" y="10.668" size="1.27" layer="95">&gt;NAME</text>
-<text x="-12.446" y="-11.938" size="1.27" layer="96">&gt;VALUE</text>
+<symbol name="PTR_AK700_2_5.0">
+<description>Šroubovací svorkovnice do DPS, zelená.
+
+Počet kontaktů = 2
+Rozteč kontaktů = 5mm
+Jmenovité napětí = 250V
+Jmenovitý proud = 24A
+Orientace vodiče = vertikální
+Možnost spojování = ano
+Výrobce PTR</description>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="IN1" x="-10.16" y="2.54" length="middle"/>
+<pin name="IN2" x="-10.16" y="-2.54" length="middle"/>
+<text x="-4.572" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -942,22 +942,24 @@ discharge (ESD).</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WEBP88_S">
-<description>RJ45 konektor do DPS, 8/8 pinů. https://www.gme.cz/rj-konektor-webp-8-8-pcb</description>
+<deviceset name="PTRAK700250">
+<description>Šroubovací svorkovnice do DPS, zelená.
+
+Počet kontaktů = 2
+Rozteč kontaktů = 5mm
+Jmenovité napětí = 250V
+Jmenovitý proud = 24A
+Orientace vodiče = vertikální
+Možnost spojování = ano
+Výrobce PTR</description>
 <gates>
-<gate name="G$1" symbol="WEBP88_RJ45_SINGLE" x="-12.7" y="10.16"/>
+<gate name="G$1" symbol="PTR_AK700_2_5.0" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SINGLE" package="WEBP88_RJ45_SINGLE">
+<device name="GME" package="PTR_AK700_2_5.0">
 <connects>
-<connect gate="G$1" pin="RJ45_1" pad="RJ45_1"/>
-<connect gate="G$1" pin="RJ45_2" pad="RJ45_2"/>
-<connect gate="G$1" pin="RJ45_3" pad="RJ45_3"/>
-<connect gate="G$1" pin="RJ45_4" pad="RJ45_4"/>
-<connect gate="G$1" pin="RJ45_5" pad="RJ45_5"/>
-<connect gate="G$1" pin="RJ45_6" pad="RJ45_6"/>
-<connect gate="G$1" pin="RJ45_7" pad="RJ45_7"/>
-<connect gate="G$1" pin="RJ45_8" pad="RJ45_8"/>
+<connect gate="G$1" pin="IN1" pad="IN1"/>
+<connect gate="G$1" pin="IN2" pad="IN2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8332,7 +8334,11 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="050-025X075" value="0.1uF"/>
 <part name="XTAL" library="special" deviceset="XTAL/S" device="" value="16MHz"/>
-<part name="INPUTS" library="PoJD" deviceset="WEBP88_S" device="SINGLE"/>
+<part name="INPUTS23" library="PoJD" deviceset="PTRAK700250" device="GME"/>
+<part name="INPUTS45" library="PoJD" deviceset="PTRAK700250" device="GME"/>
+<part name="INPUTS67" library="PoJD" deviceset="PTRAK700250" device="GME"/>
+<part name="INPUTS8" library="PoJD" deviceset="PTRAK700250" device="GME"/>
+<part name="INPUTS1" library="PoJD" deviceset="PTRAK700250" device="GME"/>
 </parts>
 <sheets>
 <sheet>
@@ -8340,7 +8346,7 @@ Source: AVX .. aphvc.pdf</description>
 </plain>
 <instances>
 <instance part="CHIP" gate="G$1" x="-76.2" y="86.36"/>
-<instance part="DEBUGGING" gate="A" x="-17.78" y="48.26"/>
+<instance part="DEBUGGING" gate="A" x="27.94" y="45.72"/>
 <instance part="RJ45CONNECTOR" gate="G$1" x="-55.88" y="124.46"/>
 <instance part="MCP2561" gate="G$1" x="20.32" y="96.52"/>
 <instance part="MCLR_J" gate="A" x="-154.94" y="106.68"/>
@@ -8364,7 +8370,11 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND3" gate="1" x="-27.94" y="104.14" rot="R270"/>
 <instance part="C3" gate="G$1" x="-20.32" y="99.06"/>
 <instance part="XTAL" gate="G$1" x="-119.38" y="93.98" rot="R90"/>
-<instance part="INPUTS" gate="G$1" x="-88.9" y="48.26"/>
+<instance part="INPUTS23" gate="G$1" x="-96.52" y="45.72"/>
+<instance part="INPUTS45" gate="G$1" x="-68.58" y="45.72"/>
+<instance part="INPUTS67" gate="G$1" x="-38.1" y="45.72"/>
+<instance part="INPUTS8" gate="G$1" x="-7.62" y="45.72"/>
+<instance part="INPUTS1" gate="G$1" x="-124.46" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -8405,8 +8415,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="DEBUGGING" gate="A" pin="2"/>
-<wire x1="-20.32" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
-<label x="-33.02" y="50.8" size="1.778" layer="95"/>
+<wire x1="25.4" y1="48.26" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
+<label x="12.7" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ4515"/>
@@ -8497,8 +8507,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="DEBUGGING" gate="A" pin="3"/>
-<wire x1="-20.32" y1="48.26" x2="-33.02" y2="48.26" width="0.1524" layer="91"/>
-<label x="-33.02" y="48.26" size="1.778" layer="95"/>
+<wire x1="25.4" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<label x="12.7" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RJ45CONNECTOR" gate="G$1" pin="RJ4518"/>
@@ -8517,9 +8527,14 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-63.5" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="INPUTS" gate="G$1" pin="RJ45_1"/>
-<wire x1="-106.68" y1="55.88" x2="-124.46" y2="55.88" width="0.1524" layer="91"/>
-<label x="-124.46" y="55.88" size="1.778" layer="95"/>
+<pinref part="INPUTS8" gate="G$1" pin="IN2"/>
+<wire x1="-17.78" y1="43.18" x2="-30.48" y2="43.18" width="0.1524" layer="91"/>
+<label x="-30.48" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUTS1" gate="G$1" pin="IN1"/>
+<wire x1="-134.62" y1="48.26" x2="-144.78" y2="48.26" width="0.1524" layer="91"/>
+<label x="-144.78" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8536,8 +8551,8 @@ Source: AVX .. aphvc.pdf</description>
 <net name="MCLR" class="0">
 <segment>
 <pinref part="DEBUGGING" gate="A" pin="1"/>
-<wire x1="-33.02" y1="53.34" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
-<label x="-27.94" y="55.88" size="1.778" layer="95" rot="R180"/>
+<wire x1="12.7" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<label x="17.78" y="53.34" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -8680,9 +8695,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-48.26" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="INPUTS" gate="G$1" pin="RJ45_5"/>
-<wire x1="-71.12" y1="55.88" x2="-55.88" y2="55.88" width="0.1524" layer="91"/>
-<label x="-63.5" y="55.88" size="1.778" layer="95"/>
+<pinref part="INPUTS45" gate="G$1" pin="IN1"/>
+<wire x1="-78.74" y1="48.26" x2="-88.9" y2="48.26" width="0.1524" layer="91"/>
+<label x="-88.9" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INPUT3" class="0">
@@ -8692,9 +8707,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-48.26" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="INPUTS" gate="G$1" pin="RJ45_4"/>
-<wire x1="-106.68" y1="40.64" x2="-124.46" y2="40.64" width="0.1524" layer="91"/>
-<label x="-124.46" y="40.64" size="1.778" layer="95"/>
+<pinref part="INPUTS23" gate="G$1" pin="IN2"/>
+<wire x1="-106.68" y1="43.18" x2="-116.84" y2="43.18" width="0.1524" layer="91"/>
+<label x="-116.84" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INPUT2" class="0">
@@ -8704,9 +8719,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-48.26" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="INPUTS" gate="G$1" pin="RJ45_3"/>
-<wire x1="-106.68" y1="45.72" x2="-124.46" y2="45.72" width="0.1524" layer="91"/>
-<label x="-124.46" y="45.72" size="1.778" layer="95"/>
+<pinref part="INPUTS23" gate="G$1" pin="IN1"/>
+<wire x1="-106.68" y1="48.26" x2="-116.84" y2="48.26" width="0.1524" layer="91"/>
+<label x="-116.84" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INPUT1" class="0">
@@ -8716,9 +8731,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-48.26" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="INPUTS" gate="G$1" pin="RJ45_2"/>
-<wire x1="-106.68" y1="50.8" x2="-124.46" y2="50.8" width="0.1524" layer="91"/>
-<label x="-124.46" y="50.8" size="1.778" layer="95"/>
+<pinref part="INPUTS1" gate="G$1" pin="IN2"/>
+<wire x1="-134.62" y1="43.18" x2="-144.78" y2="43.18" width="0.1524" layer="91"/>
+<label x="-144.78" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INPUT5" class="0">
@@ -8728,9 +8743,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-48.26" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="INPUTS" gate="G$1" pin="RJ45_6"/>
-<wire x1="-71.12" y1="50.8" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
-<label x="-63.5" y="50.8" size="1.778" layer="95"/>
+<pinref part="INPUTS45" gate="G$1" pin="IN2"/>
+<wire x1="-78.74" y1="43.18" x2="-88.9" y2="43.18" width="0.1524" layer="91"/>
+<label x="-88.9" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INPUT6" class="0">
@@ -8740,9 +8755,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-48.26" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="INPUTS" gate="G$1" pin="RJ45_7"/>
-<wire x1="-71.12" y1="45.72" x2="-55.88" y2="45.72" width="0.1524" layer="91"/>
-<label x="-63.5" y="45.72" size="1.778" layer="95"/>
+<pinref part="INPUTS67" gate="G$1" pin="IN1"/>
+<wire x1="-48.26" y1="48.26" x2="-60.96" y2="48.26" width="0.1524" layer="91"/>
+<label x="-60.96" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PGC/INPUT7" class="0">
@@ -8752,14 +8767,14 @@ Source: AVX .. aphvc.pdf</description>
 <label x="-48.26" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="INPUTS" gate="G$1" pin="RJ45_8"/>
-<wire x1="-71.12" y1="40.64" x2="-55.88" y2="40.64" width="0.1524" layer="91"/>
-<label x="-63.5" y="40.64" size="1.778" layer="95"/>
+<pinref part="DEBUGGING" gate="A" pin="5"/>
+<wire x1="25.4" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
+<label x="17.78" y="43.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="DEBUGGING" gate="A" pin="5"/>
-<wire x1="-20.32" y1="43.18" x2="-33.02" y2="43.18" width="0.1524" layer="91"/>
-<label x="-27.94" y="45.72" size="1.778" layer="95" rot="R180"/>
+<pinref part="INPUTS67" gate="G$1" pin="IN2"/>
+<wire x1="-48.26" y1="43.18" x2="-60.96" y2="43.18" width="0.1524" layer="91"/>
+<label x="-60.96" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PGD/INPUT8" class="0">
@@ -8770,8 +8785,13 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="DEBUGGING" gate="A" pin="4"/>
-<wire x1="-20.32" y1="45.72" x2="-33.02" y2="45.72" width="0.1524" layer="91"/>
-<label x="-27.94" y="48.26" size="1.778" layer="95" rot="R180"/>
+<wire x1="25.4" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<label x="17.78" y="45.72" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="INPUTS8" gate="G$1" pin="IN1"/>
+<wire x1="-17.78" y1="48.26" x2="-30.48" y2="48.26" width="0.1524" layer="91"/>
+<label x="-30.48" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -8781,7 +8801,7 @@ Source: AVX .. aphvc.pdf</description>
 <approved hash="104,1,-101.6,86.36,CHIP,VSS,GND,,,"/>
 <approved hash="104,1,-50.8,81.28,CHIP,VSS,GND,,,"/>
 <approved hash="104,1,-50.8,83.82,CHIP,VDD,+5V,,,"/>
-<approved hash="113,1,-16.2574,49.6612,DEBUGGING,,,,,"/>
+<approved hash="113,1,29.4626,47.1212,DEBUGGING,,,,,"/>
 <approved hash="113,1,-156.341,106.68,MCLR_J,,,,,"/>
 <approved hash="113,1,-122.693,76.5217,STATUSLED,,,,,"/>
 </errors>
