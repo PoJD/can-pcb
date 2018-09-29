@@ -2091,6 +2091,8 @@ design rules under a new name.</description>
 <via x="59.436" y="48.514" extent="1-16" drill="0.4" shape="square"/>
 <via x="52.324" y="48.514" extent="1-16" drill="0.4" shape="square"/>
 <via x="73.152" y="64.262" extent="1-16" drill="0.4" shape="square"/>
+<via x="48.514" y="15.367" extent="1-16" drill="0.4" shape="square"/>
+<via x="35.306" y="22.098" extent="1-16" drill="0.4" shape="square"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="1"/>
@@ -2859,16 +2861,16 @@ design rules under a new name.</description>
 <approved hash="18,29,3c009b9b4bad3fa3"/>
 <approved hash="4,1,fa72942850b1dd58"/>
 <approved hash="5,1,6f105b5ca34b6234"/>
+<approved hash="4,1,ab77abfed2d4f678"/>
 <approved hash="4,1,af3e896384b4a0a4"/>
 <approved hash="4,1,910ba8f488b0b673"/>
-<approved hash="4,1,ab77abfed2d4f678"/>
 <approved hash="4,1,fbf089edba9cf25b"/>
 <approved hash="4,1,217c4ba47977efa7"/>
 <approved hash="4,16,56eea42671ed0c95"/>
 <approved hash="4,16,56eea42671ed0c95"/>
 <approved hash="4,16,910ba8f488b0b673"/>
-<approved hash="4,16,ab77abfed2d4f678"/>
 <approved hash="4,16,af3e896384b4a0a4"/>
+<approved hash="4,16,ab77abfed2d4f678"/>
 <approved hash="4,16,217c4ba47977efa7"/>
 <approved hash="4,16,fbf089edba9cf25b"/>
 </errors>
