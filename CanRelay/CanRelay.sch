@@ -170,11 +170,11 @@
 <wire x1="4.445" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="3.81" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-5.08" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="5" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-5.08" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="3" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="0.8" shape="long" rot="R90"/>
 <text x="-6.4262" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-6.35" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
@@ -299,9 +299,9 @@
 <wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.8" shape="long" rot="R90"/>
 <text x="-3.8862" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.81" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
@@ -443,36 +443,36 @@
 <wire x1="13.97" y1="1.905" x2="13.97" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="16.51" y1="1.905" x2="16.51" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="19.05" y1="1.905" x2="19.05" y2="-1.905" width="0.1524" layer="21"/>
-<pad name="1" x="-17.78" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="2" x="-17.78" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="3" x="-15.24" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="4" x="-15.24" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="5" x="-12.7" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="6" x="-12.7" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="7" x="-10.16" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="8" x="-10.16" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="9" x="-7.62" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="10" x="-7.62" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="11" x="-5.08" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="12" x="-5.08" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="13" x="-2.54" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="14" x="-2.54" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="15" x="0" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="16" x="0" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="17" x="2.54" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="18" x="2.54" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="19" x="5.08" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="20" x="5.08" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="21" x="7.62" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="22" x="7.62" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="23" x="10.16" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="24" x="10.16" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="25" x="12.7" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="26" x="12.7" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="27" x="15.24" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="28" x="15.24" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="29" x="17.78" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="30" x="17.78" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="1" x="-17.78" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="2" x="-17.78" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="3" x="-15.24" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="4" x="-15.24" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="5" x="-12.7" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="6" x="-12.7" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="7" x="-10.16" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="8" x="-10.16" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="9" x="-7.62" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="10" x="-7.62" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="11" x="-5.08" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="12" x="-5.08" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="13" x="-2.54" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="14" x="-2.54" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="15" x="0" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="16" x="0" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="17" x="2.54" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="18" x="2.54" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="19" x="5.08" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="20" x="5.08" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="21" x="7.62" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="22" x="7.62" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="23" x="10.16" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="24" x="10.16" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="25" x="12.7" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="26" x="12.7" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="27" x="15.24" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="28" x="15.24" y="1.27" drill="0.8" shape="octagon"/>
+<pad name="29" x="17.78" y="-1.27" drill="0.8" shape="octagon"/>
+<pad name="30" x="17.78" y="1.27" drill="0.8" shape="octagon"/>
 <text x="-19.05" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-19.05" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-18.034" y1="-1.524" x2="-17.526" y2="-1.016" layer="51"/>
