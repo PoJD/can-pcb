@@ -1273,34 +1273,34 @@ package type P</description>
 <wire x1="-17.78" y1="2.54" x2="-17.78" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-17.78" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="-17.653" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="-16.51" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="16.51" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="16.51" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="21" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="22" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="23" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="24" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="25" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="26" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="27" x="-13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="28" x="-16.51" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-16.51" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="2" x="-13.97" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="8" x="1.27" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="9" x="3.81" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="11" x="8.89" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="12" x="11.43" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="14" x="16.51" y="-3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="17" x="11.43" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="18" x="8.89" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="19" x="6.35" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="20" x="3.81" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="21" x="1.27" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="22" x="-1.27" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="23" x="-3.81" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="24" x="-6.35" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="25" x="-8.89" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="26" x="-11.43" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="27" x="-13.97" y="3.81" drill="0.7" shape="long" rot="R90"/>
+<pad name="28" x="-16.51" y="3.81" drill="0.7" shape="long" rot="R90"/>
 <text x="-17.907" y="-2.54" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-15.748" y="-0.9398" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -1406,14 +1406,14 @@ The device meets the automotive requirements for
 high-speed (up to 1 Mb/s), low quiescent current,
 electromagnetic compatibility (EMC) and electrostatic
 discharge (ESD).</description>
-<pad name="TXD" x="-4" y="3.81" drill="0.8128" diameter="1.524" shape="long"/>
-<pad name="VSS" x="-4" y="1.27" drill="0.8128" diameter="1.524" shape="long"/>
-<pad name="VDD" x="-4" y="-1.27" drill="0.8128" diameter="1.524" shape="long"/>
-<pad name="RXD" x="-4" y="-3.81" drill="0.8128" diameter="1.524" shape="long"/>
-<pad name="STBY" x="4" y="3.81" drill="0.8128" diameter="1.524" shape="long"/>
-<pad name="CANH" x="4" y="1.27" drill="0.8128" diameter="1.524" shape="long"/>
-<pad name="CANL" x="4" y="-1.27" drill="0.8128" diameter="1.524" shape="long"/>
-<pad name="SPLIT" x="4" y="-3.81" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="TXD" x="-4" y="3.81" drill="0.7" diameter="1.524" shape="long"/>
+<pad name="VSS" x="-4" y="1.27" drill="0.7" diameter="1.524" shape="long"/>
+<pad name="VDD" x="-4" y="-1.27" drill="0.7" diameter="1.524" shape="long"/>
+<pad name="RXD" x="-4" y="-3.81" drill="0.7" diameter="1.524" shape="long"/>
+<pad name="STBY" x="4" y="3.81" drill="0.7" diameter="1.524" shape="long"/>
+<pad name="CANH" x="4" y="1.27" drill="0.7" diameter="1.524" shape="long"/>
+<pad name="CANL" x="4" y="-1.27" drill="0.7" diameter="1.524" shape="long"/>
+<pad name="SPLIT" x="4" y="-3.81" drill="0.7" diameter="1.524" shape="long"/>
 <wire x1="-2.5" y1="3.81" x2="-2.5" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-3.81" x2="2.5" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.127" layer="21"/>
@@ -2024,11 +2024,6 @@ design rules under a new name.</description>
 <approved hash="18,29,eb7887abcc979871"/>
 <approved hash="18,29,0d90ad14bb1c1b98"/>
 <approved hash="18,29,37cb3d19411f4bcd"/>
-<approved hash="18,29,43c7ffe5fff347b1"/>
-<approved hash="18,29,080e98b80718dfa4"/>
-<approved hash="18,29,93f43c3eee540994"/>
-<approved hash="18,29,014685971221d696"/>
-<approved hash="18,29,9bb021e5fa610052"/>
 <approved hash="18,29,2cc868301a98a2ba"/>
 <approved hash="18,29,46a9d339b1dfdde1"/>
 <approved hash="18,29,7e59dcb487aae671"/>
@@ -2086,7 +2081,6 @@ design rules under a new name.</description>
 <approved hash="18,29,f1b32cc0f1cc53ca"/>
 <approved hash="18,29,013b48940b1cd112"/>
 <approved hash="18,29,de0b49ecac1cac7a"/>
-<approved hash="18,29,13332e96d296ef33"/>
 <approved hash="18,29,222d9ad6499fe084"/>
 <approved hash="18,29,909b69a58f3d63c3"/>
 <approved hash="18,29,18c6014d45ae735e"/>
@@ -2094,6 +2088,56 @@ design rules under a new name.</description>
 <approved hash="18,29,91bb1af46ef89cca"/>
 <approved hash="18,29,440c07edac29977c"/>
 <approved hash="18,29,013c06929129ea13"/>
+<approved hash="18,29,43c7ffe5fff347b1"/>
+<approved hash="18,29,080e98b80718dfa4"/>
+<approved hash="18,29,93f43c3eee540994"/>
+<approved hash="18,29,014685971221d696"/>
+<approved hash="18,29,9bb021e5fa610052"/>
+<approved hash="18,29,f1a84f198bddcada"/>
+<approved hash="18,29,6d251efe7294e1a1"/>
+<approved hash="18,29,5a8e1af8724aed3a"/>
+<approved hash="18,29,56171ac676b8da93"/>
+<approved hash="18,29,427017147e8ac674"/>
+<approved hash="18,29,de841afc72d25100"/>
+<approved hash="18,29,caed1afe6eb45e99"/>
+<approved hash="18,29,ab381e84729a27ac"/>
+<approved hash="18,29,c6761e9876ba4a72"/>
+<approved hash="18,29,bfdf16d67f483bcb"/>
+<approved hash="18,29,98811af672541305"/>
+<approved hash="18,29,94ea1af86eb2009e"/>
+<approved hash="18,29,71dc16dc7f52f5c8"/>
+<approved hash="18,29,80731f1e76b00c77"/>
+<approved hash="18,29,e13b169e729065af"/>
+<approved hash="18,29,5d5d246fe07d9b4c"/>
+<approved hash="18,29,0977d5d804bc9e0d"/>
+<approved hash="18,29,14938d68580287e7"/>
+<approved hash="18,29,bb5c046fa47ed94d"/>
+<approved hash="18,29,e083ae229d4731f7"/>
+<approved hash="18,29,bb69149c23f86e1c"/>
+<approved hash="18,29,b95f80718461bb4e"/>
+<approved hash="18,29,c264bb918eedf508"/>
+<approved hash="18,29,7b8e032f325348e2"/>
+<approved hash="18,29,e92b87a5b68338e3"/>
+<approved hash="18,29,dc94840fb44933d4"/>
+<approved hash="18,29,11b89a4fabf9c030"/>
+<approved hash="18,29,f60a86a7b89d25aa"/>
+<approved hash="18,29,1e8f8435b443cddf"/>
+<approved hash="18,29,04c18001b21bd371"/>
+<approved hash="18,29,d7bd8679b70b0635"/>
+<approved hash="18,29,53b38645b7f3823b"/>
+<approved hash="18,29,2b2e83b7b295fa86"/>
+<approved hash="18,29,cae68837b605194e"/>
+<approved hash="18,29,58728427b43d8fc2"/>
+<approved hash="18,29,38058aa9b88be7ad"/>
+<approved hash="18,29,652987a1b69bb489"/>
+<approved hash="18,29,46dc81ffb609950c"/>
+<approved hash="18,29,db5fa0690878bd49"/>
+<approved hash="18,29,6972c28711e35c06"/>
+<approved hash="18,29,d2989c394b5de3ec"/>
+<approved hash="18,29,13332e96d296ef33"/>
+<approved hash="18,29,9551e46018705b40"/>
+<approved hash="18,29,ada77905e06a7ad8"/>
+<approved hash="18,29,f04e69b8f4d72331"/>
 <approved hash="18,29,87c72ff92f8183df"/>
 <approved hash="18,29,224768e168e12247"/>
 <approved hash="18,29,1afd405f405f1afd"/>
