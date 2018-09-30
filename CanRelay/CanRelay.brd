@@ -1544,14 +1544,14 @@ The device meets the automotive requirements for
 high-speed (up to 1 Mb/s), low quiescent current,
 electromagnetic compatibility (EMC) and electrostatic
 discharge (ESD).</description>
-<pad name="TXD" x="-4" y="3.81" drill="0.7" diameter="1.524" shape="long"/>
-<pad name="VSS" x="-4" y="1.27" drill="0.7" diameter="1.524" shape="long"/>
-<pad name="VDD" x="-4" y="-1.27" drill="0.7" diameter="1.524" shape="long"/>
-<pad name="RXD" x="-4" y="-3.81" drill="0.7" diameter="1.524" shape="long"/>
-<pad name="STBY" x="4" y="3.81" drill="0.7" diameter="1.524" shape="long"/>
-<pad name="CANH" x="4" y="1.27" drill="0.7" diameter="1.524" shape="long"/>
-<pad name="CANL" x="4" y="-1.27" drill="0.7" diameter="1.524" shape="long"/>
-<pad name="SPLIT" x="4" y="-3.81" drill="0.7" diameter="1.524" shape="long"/>
+<pad name="TXD" x="-4" y="3.81" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="VSS" x="-4" y="1.27" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="VDD" x="-4" y="-1.27" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="RXD" x="-4" y="-3.81" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="STBY" x="4" y="3.81" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="CANH" x="4" y="1.27" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="CANL" x="4" y="-1.27" drill="0.8128" diameter="1.524" shape="long"/>
+<pad name="SPLIT" x="4" y="-3.81" drill="0.8128" diameter="1.524" shape="long"/>
 <wire x1="-2.5" y1="3.81" x2="-2.5" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-3.81" x2="2.5" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-3.81" x2="2.5" y2="3.81" width="0.127" layer="21"/>
